@@ -1,0 +1,36 @@
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #21A9FF;
+
+  &::before {
+    content: '';
+    display: flex;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #21A9FF;
+  }
+
+  &--lighten {
+    border-color: #01D1FF;
+
+    &::before {
+      background-color: #01D1FF;
+    }
+  }
+
+  &--light {
+    border-color: #87E9FF;
+
+    &::before {
+      background-color: #87E9FF;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.title {
+  position: relative;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 108.5%;
+  z-index: 2;
+
+  span {
+    font-weight: 700;
+    background: linear-gradient(100.21deg, #00FFFF -19.34%, #0075FF 82.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}

@@ -1,0 +1,14 @@
+.decor-line {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  width: 615px;
+  transform: translateY(-50%);
+  z-index: 0;
+  pointer-events: none;
+
+  &--left {
+    left: 0;
+  }
+}

@@ -7,13 +7,727 @@
 </head>
 
 <body class="body">
-<%= htmlWebpackPlugin.options.sectionHeader %>
+<header class="header">
+  <div class="container">
+    <div class="header-intro">
+      <div class="logo">
+        <a href="/">Goulash.tech</a>
+      </div>
+      <nav class="nav">
+        <a href="#" class="nav__link">наша статистика</a>
+        <a href="#" class="nav__link">отзывы</a>
+        <a href="#" class="nav__link">подключить</a>
+        <a href="#" class="nav__link">преимущества</a>
+        <a href="#" class="nav__link">стать партнером</a>
+        <a href="#" class="nav__link">работа у нас</a>
+      </nav>
+    </div>
+  </div>
+</header>
 <main class="main">
-    <section class="section">
-        <div class="container">
-            <h1>Hello World!</h1>
+  <section class="section section--dark">
+    <div class="intro">
+      <div class="container">
+        <div class="intro__wrapper">
+          <div class="intro__info">
+            <h1 class="intro__title">
+              Goulash<br />.tech
+            </h1>
+            <p class="intro__description">
+              Программа автоматизации доставки от экспертов в ресоранном бизнесе с 13-летним опытом работы
+            </p>
+            <button class="button button--gradient">Хочу подключиться!</button>
+          </div>
+          <div class="slider">
+
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+  <section class="section pt-125 pb-55">
+    <div class="container">
+      <h2 class="title mb-55">наш <span>функционал</span> и<br /> набор <span>полезных опций</span></h2>
+      <div class="columns">
+        <div class="columns__col columns__col--4">
+          <article class="article-feature article-feature--first">
+            <ul class="article-feature__list">
+              <li class="article-feature__item">
+                <div class="circle"></div>
+                Удобная оплата<br> одной транзакцией
+              </li>
+            </ul>
+          </article>
+        </div>
+        <div class="columns__col columns__col--4">
+          <article class="article-feature article-feature--second">
+            <ul class="article-feature__list">
+              <li class="article-feature__item">
+                <div class="circle circle--lighten"></div>
+                Удобная оплата одной транзакцией для кухни и бара с отправкой денег на разные р/c и разной фискализацией
+              </li>
+              <li class="article-feature__item">
+                <div class="circle circle--lighten"></div>
+                Удобная оплата одной транзакцией для кухни
+              </li>
+              <li class="article-feature__item">
+                <div class="circle circle--lighten"></div>
+                Удобная оплата для кухни
+              </li>
+              <li class="article-feature__item">
+                <div class="circle circle--lighten"></div>
+                Удобная оплата
+              </li>
+
+            </ul>
+          </article>
+        </div>
+        <div class="columns__col columns__col--4">
+          <article class="article-feature article-feature--third">
+            <ul class="article-feature__list">
+              <li class="article-feature__item">
+                <div class="circle"></div>
+                Удобная оплата одной транзакцией для кухни и бара с отправкой денег
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section pt-55 pb-55">
+    <div class="container">
+      <h2 class="title text-right mb-50">наша статистика</h2>
+      <div class="columns">
+        <div class="columns__col columns__col--7">
+          <div class="article-card article-timeline">
+            <h3 class="article-title">Подключено ресторанов:</h3>
+            <svg class="article-timeline__icon">
+              <use xlink:href="./assets/sprite/sprite.svg#icon-timeline"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="columns__col columns__col--5 columns__row--2">
+          <article class="article-card article-percents">
+            <h3 class="article-title mb-30">Подключено точек:</h3>
+            <div class="article-percents__item">
+              <p class="article-percents__text">Нижний Новгород</p>
+              <div class="article-percents__line">
+                <span style="width: 10%"></span>
+              </div>
+              <div class="tooltip">
+                <svg class="tooltip__icon">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-location"></use>
+                </svg>
+                <p>57 точек</p>
+              </div>
+            </div>
+            <div class="article-percents__item">
+              <p class="article-percents__text">Екатеринбург</p>
+              <div class="article-percents__line">
+                <span style="width: 25%"></span>
+              </div>
+              <div class="tooltip">
+                <svg class="tooltip__icon">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-location"></use>
+                </svg>
+                <p>31 точек</p>
+              </div>
+            </div>
+            <div class="article-percents__item">
+              <p class="article-percents__text">Новосибирск</p>
+              <div class="article-percents__line">
+                <span style="width: 40%"></span>
+              </div>
+              <div class="tooltip">
+                <svg class="tooltip__icon">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-location"></use>
+                </svg>
+                <p>78 точек</p>
+              </div>
+            </div>
+            <div class="article-percents__item">
+              <p class="article-percents__text">Санкт-Петербург</p>
+              <div class="article-percents__line">
+                <span style="width: 70%"></span>
+              </div>
+              <div class="tooltip">
+                <svg class="tooltip__icon">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-location"></use>
+                </svg>
+                <p>450 точек</p>
+              </div>
+            </div>
+            <div class="article-percents__item">
+              <p class="article-percents__text">Москва</p>
+              <div class="article-percents__line">
+                <span style="width: 43%"></span>
+              </div>
+              <div class="tooltip">
+                <svg class="tooltip__icon">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-location"></use>
+                </svg>
+                <p>327 точек</p>
+              </div>
+            </div>
+            <div class="article-percents__item">
+              <p class="article-percents__text">Нижний Новгород</p>
+              <div class="article-percents__line">
+                <span style="width: 12%"></span>
+              </div>
+              <div class="tooltip">
+                <svg class="tooltip__icon">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-location"></use>
+                </svg>
+                <p>14 точек</p>
+              </div>
+            </div>
+            <div class="article-percents__item">
+              <p class="article-percents__text">Екатеринбург</p>
+              <div class="article-percents__line">
+                <span style="width: 88%"></span>
+              </div>
+              <div class="tooltip">
+                <svg class="tooltip__icon">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-location"></use>
+                </svg>
+                <p>657 точек</p>
+              </div>
+            </div>
+            <div class="article-percents__item">
+              <p class="article-percents__text">Новосибирск</p>
+              <div class="article-percents__line">
+                <span style="width: 56%"></span>
+              </div>
+              <div class="tooltip">
+                <svg class="tooltip__icon">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-location"></use>
+                </svg>
+                <p>533 точек</p>
+              </div>
+            </div>
+            <div class="article-percents__item">
+              <p class="article-percents__text">Санкт-Петербург</p>
+              <div class="article-percents__line">
+                <span style="width: 37%"></span>
+              </div>
+              <div class="tooltip">
+                <svg class="tooltip__icon">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-location"></use>
+                </svg>
+                <p>232 точек</p>
+              </div>
+            </div>
+            <a href="#" class="article-percents__show-more show-more">
+              Ещё
+              <svg class="show-more__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </a>
+          </article>
+        </div>
+        <div class="columns__col columns__col--4">
+          <article class="article-card article-rating article-rating--app">
+            <picture class="article-rating__picture">
+              <img src="./assets/images/iphone.png" alt="">
+            </picture>
+            <div class="article-rating__info">
+              <h3 class="article-title">Мобильный сайт</h3>
+              <p class="article-rating__text">оценка приложения</p>
+              <div class="rating">
+                <svg class="rating__icon">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                </svg>
+                <p class="rating__text">4.9</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="columns__col columns__col--3">
+          <article class="article-card article-rating article-rating--call">
+            <div class="article-rating__info">
+              <h3 class="article-title">Call-центр</h3>
+              <p class="article-rating__text">оценка приложения</p>
+              <div class="rating">
+                <svg class="rating__icon">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                </svg>
+                <p class="rating__text">4.9</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="columns__col columns__col--12">
+          <article class="article-stats">
+            <div class="article-stats__item">
+              <svg class="article-stats__icon">
+                <use class="main" xlink:href="./assets/sprite/sprite.svg#icon-fire"></use>
+                <use class="grad" xlink:href="./assets/sprite/sprite.svg#icon-fire"></use>
+              </svg>
+              <h3 class="article-stats__title">5 250+</h3>
+              <p class="article-stats__text">
+                кол-во заказов<br>
+                сделанных в этом году
+              </p>
+            </div>
+            <div class="article-stats__item">
+              <svg class="article-stats__icon">
+                <use class="main" xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                <use class="grad" xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+              </svg>
+              <h3 class="article-stats__title">4.9</h3>
+              <p class="article-stats__text">средняя оценка<br> приложения</p>
+            </div>
+            <div class="article-stats__item">
+              <svg class="article-stats__icon">
+                <use class="main" xlink:href="./assets/sprite/sprite.svg#icon-people"></use>
+                <use class="grad" xlink:href="./assets/sprite/sprite.svg#icon-people"></use>
+              </svg>
+              <h3 class="article-stats__title">225</h3>
+              <p class="article-stats__text">среднее количество<br> гостей</p>
+            </div>
+            <div class="article-stats__item">
+              <svg class="article-stats__icon">
+                <use class="main" xlink:href="./assets/sprite/sprite.svg#icon-globe"></use>
+                <use class="grad" xlink:href="./assets/sprite/sprite.svg#icon-globe"></use>
+              </svg>
+              <h3 class="article-stats__title">25</h3>
+              <p class="article-stats__text">городов в которые<br>
+                мы осуществляем доставку</p>
+            </div>
+          </article>
+        </div>
+        <div class="columns__col columns__col--12">
+          <article class="article-card article-card--custom">
+            <h3 class="article-title">Где были сделаны заказы</h3>
+            <img src="./assets/images/map.jpg" alt="">
+          </article>
+        </div>
+        <div class="columns__col columns__col--7">
+          <div class="article-card article-timeline">
+            <h3 class="article-title">Среднее время нахождения продукта на полке:</h3>
+            <svg class="article-timeline__icon">
+              <use xlink:href="./assets/sprite/sprite.svg#icon-timeline"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="columns__col columns__col--5">
+          <div class="article-card article-graph">
+            <h3 class="article-title mb-30">Среднее время приготовления блюда:</h3>
+            <svg class="article-graph__icon">
+              <use xlink:href="./assets/sprite/sprite.svg#icon-graph"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="columns__col columns__col--12">
+          <div class="article-card article-timeline article-timeline--pictures">
+            <div class="article-timeline__info">
+              <h3 class="article-title mb-30">Среднее время доставки:</h3>
+              <svg class="article-timeline__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-timeline"></use>
+              </svg>
+            </div>
+            <picture class="article-timeline__picture">
+              <img src="./assets/images/trans.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section pt-55 pb-55">
+    <div class="container">
+      <h2 class="title mb-50">почему мы?</h2>
+      <div class="columns">
+        <div class="columns__col columns__col--4">
+          <article class="article-card article-benefits">
+            <picture class="article-benefits__picture">
+              <img src="./assets/images/service.png" alt="">
+            </picture>
+            <h3 class="article-benefits__title">Сервис 7 в 1</h3>
+            <p class="article-benefits__text">за счет повышения лояльности ваших гостей</p>
+          </article>
+        </div>
+        <div class="columns__col columns__col--4">
+          <article class="article-card article-benefits">
+            <picture class="article-benefits__picture">
+              <img src="./assets/images/percents.png" alt="">
+            </picture>
+            <h3 class="article-benefits__title">Увеличение посещений</h3>
+            <p class="article-benefits__text">за счет повышения лояльности ваших гостей</p>
+          </article>
+        </div>
+        <div class="columns__col columns__col--4">
+          <article class="article-card article-benefits">
+            <picture class="article-benefits__picture">
+              <img src="./assets/images/price.png" alt="">
+            </picture>
+            <h3 class="article-benefits__title">Рост выручки</h3>
+            <p class="article-benefits__text">за счет повышения лояльности ваших гостей</p>
+          </article>
+        </div>
+        <div class="columns__col columns__col--7">
+          <article class="article-connect">
+            <h3 class="article-connect__title">
+              <span>Goulash</span><br>.tech
+            </h3>
+            <div class="article-connect__box"></div>
+            <picture class="article-connect__picture">
+              <img src="./assets/images/arm.png" alt="">
+            </picture>
+            <button class="article-connect__button">
+              <span class="article-connect__circle">
+                <svg class="article-connect__icon">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                </svg>
+              </span>
+              Подключиться
+            </button>
+          </article>
+        </div>
+        <div class="columns__col columns__col--5">
+          <article class="article-card article-benefits article-benefits--big">
+            <picture class="article-benefits__picture">
+              <img src="./assets/images/improve.png" alt="">
+            </picture>
+            <h3 class="article-benefits__title">Рост выручки</h3>
+            <p class="article-benefits__text">Подключайте модульное решение с бессрочным сроком лицензии и работайте
+              только с нужным функционалом. Все для работы с каждым заведением в сети: кассовый модуль, складской учет,
+              отчеты для управляющего, работа с лояльностью, удаленный контроль в режиме онлайн, настройка работы зала и
+              кухни.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section pt-55 pb-55">
+    <div class="container">
+      <h2 class="title center mb-50">отзывы</h2>
+      <div class="slider mb-30" data-slider="reviews">
+        <div class="swiper" data-slide>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="article-reviews">
+                <h3 class="article-reviews__title">Отлично!</h3>
+                <p class="article-reviews__text">
+                  Я привел примеры положительных отзывов о разных сервисах на все случаи жизни. Порой, когда вы хотите
+                  оставить положительный отзыв об организации ...
+                </p>
+                <div class="article-reviews__author">
+                  <div class="article-reviews__info">
+                    <picture class="article-reviews__picture">
+                      <img src="https://fakeimg.pl/600x400" alt="">
+                    </picture>
+                    <div class="article-reviews__about">
+                      <h4 class="article-reviews__name">Михаил Д.</h4>
+                      <p class="article-reviews__company">Название компании</p>
+                    </div>
+                  </div>
+                  <div class="reviews-rating">
+                    <svg class="reviews-rating__icon">
+                      <use xlink:href="./assets/sprite/sprite.svg#icon-star-fill"></use>
+                    </svg>
+                    4.3
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="article-reviews">
+                <h3 class="article-reviews__title">Отлично!</h3>
+                <p class="article-reviews__text">
+                  Я привел примеры положительных отзывов о разных сервисах на все случаи жизни. Порой, когда вы хотите
+                  оставить положительный отзыв об организации ...
+                </p>
+                <div class="article-reviews__author">
+                  <div class="article-reviews__info">
+                    <picture class="article-reviews__picture">
+                      <img src="https://fakeimg.pl/600x400" alt="">
+                    </picture>
+                    <div class="article-reviews__about">
+                      <h4 class="article-reviews__name">Михаил Д.</h4>
+                      <p class="article-reviews__company">Название компании</p>
+                    </div>
+                  </div>
+                  <div class="reviews-rating">
+                    <svg class="reviews-rating__icon">
+                      <use xlink:href="./assets/sprite/sprite.svg#icon-star-fill"></use>
+                    </svg>
+                    4.3
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="article-reviews">
+                <h3 class="article-reviews__title">Отлично!</h3>
+                <p class="article-reviews__text">
+                  Я привел примеры положительных отзывов о разных сервисах на все случаи жизни. Порой, когда вы хотите
+                  оставить положительный отзыв об организации ...
+                </p>
+                <div class="article-reviews__author">
+                  <div class="article-reviews__info">
+                    <picture class="article-reviews__picture">
+                      <img src="https://fakeimg.pl/600x400" alt="">
+                    </picture>
+                    <div class="article-reviews__about">
+                      <h4 class="article-reviews__name">Михаил Д.</h4>
+                      <p class="article-reviews__company">Название компании</p>
+                    </div>
+                  </div>
+                  <div class="reviews-rating">
+                    <svg class="reviews-rating__icon">
+                      <use xlink:href="./assets/sprite/sprite.svg#icon-star-fill"></use>
+                    </svg>
+                    4.3
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="article-reviews">
+                <h3 class="article-reviews__title">Отлично!</h3>
+                <p class="article-reviews__text">
+                  Я привел примеры положительных отзывов о разных сервисах на все случаи жизни. Порой, когда вы хотите
+                  оставить положительный отзыв об организации ...
+                </p>
+                <div class="article-reviews__author">
+                  <div class="article-reviews__info">
+                    <picture class="article-reviews__picture">
+                      <img src="https://fakeimg.pl/600x400" alt="">
+                    </picture>
+                    <div class="article-reviews__about">
+                      <h4 class="article-reviews__name">Михаил Д.</h4>
+                      <p class="article-reviews__company">Название компании</p>
+                    </div>
+                  </div>
+                  <div class="reviews-rating">
+                    <svg class="reviews-rating__icon">
+                      <use xlink:href="./assets/sprite/sprite.svg#icon-star-fill"></use>
+                    </svg>
+                    4.3
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="button centered">Оставить отзыв</button>
+    </div>
+  </section>
+  <section class="section section--bg pt-55 pb-100">
+    <div class="container">
+      <h2 class="title text-right mb-50">отправить заявку</h2>
+      <div class="feedback">
+        <h3 class="feedback__title">Заявка на внедрение в ваш бизнес</h3>
+        <div class="form">
+          <fieldset class="form__wrapper">
+            <label class="form__item">
+              <input class="input" type="text" placeholder="Имя" name="USER_NAME" required>
+            </label>
+            <label class="form__item">
+              <input class="input" type="tel" placeholder="Телефон" name="USER_PHONE" required>
+            </label>
+            <label class="form__item">
+              <input class="input" type="email" placeholder="E-mail" name="USER_EMAIL" required>
+            </label>
+          </fieldset>
+          <fieldset class="form__wrapper">
+            <p class="form__desc">
+              Нажимая кнопку Отправить заявку, Вы даете согласие на получение сервисных и рекламных сообщений о
+              Программном обеспечении Оператора и продуктах/услугах его Партнеров, согласие на обработку персональных
+              данных и соглашаетесь с политикой обработки персональных данных
+            </p>
+            <button class="button button--gradient-blue" type="submit">Хочу подключиться!</button>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <svg class="background-clip">
+      <use xlink:href="./assets/sprite/sprite.svg#icon-bg"></use>
+    </svg>
+  </section>
+  <section class="section section--blur section--dark section--animate pt-150 pb-70">
+    <div class="container container--full">
+      <h2 class="title center">В чем <span>удобство работы</span> с нами?</h2>
+      <div class="advantages">
+        <picture class="advantages__picture">
+          <img src="./assets/images/laptop.png" alt="">
+        </picture>
+        <div class="advantages__list">
+          <div class="advantages__item">
+            <h3 class="advantages__title">
+              <span>Удобно</span> для ваших гостей
+            </h3>
+            <p class="advantages__text">
+              Гость сканирует QR-код или NFC-метку и открывает Web-приложение, где может изучить меню, сделать заказ,
+              оплатить счёт или разделить меню. Это полностью безопасно!
+            </p>
+          </div>
+          <div class="advantages__item">
+            <h3 class="advantages__title">
+              <span>Мотивирует</span> ваших сотрудников
+            </h3>
+            <p class="advantages__text">Доход официантов увеличивается, так как гостю стало ещё проще оставлять чаевые,
+              скорость обслуживания возрастает, больше закрытых столов.</p>
+          </div>
+          <div class="advantages__item">
+            <h3 class="advantages__title">
+              <span>Увеличивает</span> ваши продажи
+            </h3>
+            <p class="advantages__text">Увеличьте выручку и обгоните конкурентов, за счет внедрения технологий и
+              экономии времени</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg class="background-clip background-clip--top">
+      <use xlink:href="./assets/sprite/sprite.svg#icon-bg"></use>
+    </svg>
+    <div class="decor">
+      <div class="d-circle d-circle--blue"></div>
+      <div class="d-circle d-circle--green"></div>
+      <div class="d-circle d-circle--blue"></div>
+      <div class="d-circle d-circle--green"></div>
+      <div class="d-circle d-circle--green"></div>
+    </div>
+  </section>
+  <section class="section section--dark pt-55 pb-55">
+    <div class="container">
+      <div class="feedback">
+        <h3 class="feedback__title">Я хочу подключить ваше приложение<br> и стать вашим партнером!</h3>
+        <div class="form">
+          <fieldset class="form__wrapper">
+            <label class="form__item">
+              <input class="input" type="text" placeholder="Имя" name="USER_NAME" required>
+            </label>
+            <label class="form__item">
+              <input class="input" type="tel" placeholder="Телефон" name="USER_PHONE" required>
+            </label>
+            <label class="form__item">
+              <input class="input" type="email" placeholder="E-mail" name="USER_EMAIL" required>
+            </label>
+          </fieldset>
+          <fieldset class="form__wrapper">
+            <p class="form__desc">
+              Нажимая кнопку Отправить заявку, Вы даете согласие на получение сервисных и рекламных сообщений о
+              Программном обеспечении Оператора и продуктах/услугах его Партнеров, согласие на обработку персональных
+              данных и соглашаетесь с политикой обработки персональных данных
+            </p>
+            <button class="button" type="submit">Хочу подключиться!</button>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <img class="decor-line" src="./assets/images/icon-line.svg" alt="">
+    <img class="decor-line decor-line--left" src="./assets/images/icon-line-left.svg" alt="">
+  </section>
+  <section class="section section--dark pt-55">
+    <div class="container">
+      <div class="vacancy">
+        <h2 class="title center mb-120">Мы находимся в постоянном поиске<br> близких по духу людей</h2>
+        <div class="vacancy__body">
+          <div class="vacancy__info">
+            <p class="vacancy__text">
+              У тебя будут реальные возможности для роста, но кроме этого, с нами легко и комфортно. Потому что
+              качественные продукты можно создавать только когда у тебя есть для этого все условия.
+            </p>
+            <button class="button button--gradient-blue">Перейти</button>
+          </div>
+          <picture class="vacancy__decor">
+            <img src="./assets/images/arrow-decor.svg" alt="">
+          </picture>
+          <picture class="vacancy__picture">
+            <img src="./assets/images/laptop-2.png" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section pt-55 pb-110">
+    <div class="container">
+      <div class="faq">
+        <div class="faq__header">
+          <h2 class="title mb-10">Вопросы и ответы</h2>
+          <p class="faq__description">Отвечаем на самые популярные вопросы</p>
+        </div>
+        <div class="faq__wrapper">
+          <div class="faq__item" data-accordeone>
+            <div class="faq__head">
+              <h3 class="faq__title">С какими pos-системами вы работаете?</h3>
+              <svg class="faq__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+              </svg>
+            </div>
+            <div class="faq__content">
+              <p class="faq__text">
+                Наш сервис полностью интегрирован с Iiko и R-keeper. Отдельным модулем можно внедрить систему лояльности
+                на Iiko, R-keeper, Poster, Эвотор, Тилльпад, 1С, МойСклад и др.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item" data-accordeone>
+            <div class="faq__head">
+              <h3 class="faq__title">Сколько времени занимает подключение?</h3>
+              <svg class="faq__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+              </svg>
+            </div>
+            <div class="faq__content">
+              <p class="faq__text">
+                Наш сервис полностью интегрирован с Iiko и R-keeper. Отдельным модулем можно внедрить систему лояльности
+                на Iiko, R-keeper, Poster, Эвотор, Тилльпад, 1С, МойСклад и др.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item" data-accordeone>
+            <div class="faq__head">
+              <h3 class="faq__title">зачем нужна интеграция с кассовой системой ресторана?</h3>
+              <svg class="faq__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+              </svg>
+            </div>
+            <div class="faq__content">
+              <p class="faq__text">
+                Наш сервис полностью интегрирован с Iiko и R-keeper. Отдельным модулем можно внедрить систему лояльности
+                на Iiko, R-keeper, Poster, Эвотор, Тилльпад, 1С, МойСклад и др.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item" data-accordeone>
+            <div class="faq__head">
+              <h3 class="faq__title">как сервис понимает, к какому столу относится тот или иной заказ?</h3>
+              <svg class="faq__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+              </svg>
+            </div>
+            <div class="faq__content">
+              <p class="faq__text">
+                Наш сервис полностью интегрирован с Iiko и R-keeper. Отдельным модулем можно внедрить систему лояльности
+                на Iiko, R-keeper, Poster, Эвотор, Тилльпад, 1С, МойСклад и др.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item" data-accordeone>
+            <div class="faq__head">
+              <h3 class="faq__title">нужно ли скачивать приложение, чтобы гость мог воспользоваться сервисом?</h3>
+              <svg class="faq__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+              </svg>
+            </div>
+            <div class="faq__content">
+              <p class="faq__text">
+                Наш сервис полностью интегрирован с Iiko и R-keeper. Отдельным модулем можно внедрить систему лояльности
+                на Iiko, R-keeper, Poster, Эвотор, Тилльпад, 1С, МойСклад и др.
+              </p>
+            </div>
+          </div>
+          <button class="button">Задать вопрос</button>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <%= htmlWebpackPlugin.options.sectionFooter %>
 <%= htmlWebpackPlugin.options.temp %>

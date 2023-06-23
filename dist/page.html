@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Title child page | Dranik</title>
+<link href="./css/main.css" rel="stylesheet"></head>
+<body class="body">
+    <header class="section">
+    <div class="container">
+        Шапка
+    </div>
+</header>
+    <main class="main">
+        <section class="section">
+            <div class="container">
+                Content of child page
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-header">
+      <div class="footer-header__meta">
+        <h2 class="footer-header__logo">Goulash.tech</h2>
+        <div class="social">
+          <a href="#" class="social__item">
+            <svg class="social__icon">
+              <use xlink:href="./assets/sprite/sprite.svg#icon-viber"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__item">
+            <svg class="social__icon">
+              <use xlink:href="./assets/sprite/sprite.svg#icon-telegram"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__item">
+            <svg class="social__icon">
+              <use xlink:href="./assets/sprite/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="address">
+          <a href="tel:+79025092911" class="address__text address__text--phone">
+            +7 (902) 509-29-11
+          </a>
+          <p class="address__text">
+            Екатеринбург, ул. Горького, д. 65
+          </p>
+        </div>
+      </div>
+      <nav class="nav nav--footer">
+        <a href="#" class="nav__link">продукты</a>
+        <a href="#" class="nav__link">тарифы</a>
+        <a href="#" class="nav__link">где купить</a>
+        <a href="#" class="nav__link">база знаний</a>
+        <a href="#" class="nav__link">поддержка</a>
+        <a href="#" class="nav__link">блог</a>
+      </nav>
+    </div>
+    <div class="footer-footer">
+      <p class="sponsor">
+        <img src="./assets/images/osmisle-logo.svg" alt="">
+        Сайт разработан О’Смысле
+      </p>
+      <form class="form form--footer">
+        <p class="form__text">Подпишитесь на новости:</p>
+        <label>
+          <input class="input input--gray" type="text" placeholder="Ваш e-mail">
+        </label>
+        <button class="button button--small-gray">Оставить заявку</button>
+      </form>
+    </div>
+  </div>
+</footer>
+<div class="hidden">
+  <svg>
+    <linearGradient id="gradient">
+      <stop stop-color="#02E88D" />
+      <stop offset="1" stop-color="#84E3E9" />
+    </linearGradient>
+  </svg>
+</div>
+    <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
+<section class="section">
+    <div class="container">
+        <style>
+            .temp {
+                gap: 15px;
+                display: flex;
+            }
+
+            .temp__link {
+                color: inherit;
+                font-size: 16px;
+                text-decoration: underline;
+            }
+
+            .temp__link:hover {
+                text-decoration: none;
+            }
+        </style>
+        <div class="temp">
+            <a href="./index.html" class="temp__link">Главная</a>
+            <a href="./page.html" class="temp__link">Дочерняя страница</a>
+        </div>
+    </div>
+</section>
+<script defer src="js/bundle.js"></script></body>
+</html>

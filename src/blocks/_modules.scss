@@ -1,11 +1,57 @@
 @import "modules/body/body";
-@import "modules/breadcrumbs/breadcrumbs";
 @import "modules/columns/columns";
 @import "modules/container/container";
 @import "modules/editor/editor";
+
+@import "modules/breadcrumbs/breadcrumbs";
 @import "modules/main/main";
 @import "modules/section/section";
+@import "modules/header/header";
+@import "modules/header/header-intro";
+@import "modules/intro/intro";
+@import "modules/intro/intro";
+@import "modules/nav/nav";
+@import "modules/slider/slider";
+@import "modules/logo/logo";
+@import "modules/title/title";
+@import "modules/feedback/feedback";
+@import "modules/form/form";
+@import "modules/advantages/advantages";
+@import "modules/vacancy/vacancy";
+@import "modules/faq/faq";
+@import "modules/social/social";
+@import "modules/address/address";
 
-@include r(1200) {
-    
-}
+// Footer
+@import "modules/footer/footer";
+@import "modules/footer/footer-header";
+@import "modules/footer/footer-footer";
+
+// UI
+@import "UI/buttons/buttons";
+@import "UI/decor/circle";
+@import "UI/tooltip/tooltip";
+@import "UI/rating/rating";
+@import "UI/rating/reviews-rating";
+@import "UI/show-more/show-more";
+@import "UI/input/input";
+@import "UI/icon-bg/icon-bg";
+@import "UI/decor-line/decor-line";
+@import "UI/sponsor/sponsor";
+@import "UI/decor/d-circle";
+
+// Articles
+@import "modules/articles/article-feature";
+@import "modules/articles/article-card";
+@import "modules/articles/article-timeline";
+@import "modules/articles/article-graph";
+@import "modules/articles/article-percents";
+@import "modules/articles/article-title";
+@import "modules/articles/article-stats";
+@import "modules/articles/article-rating";
+@import "modules/articles/article-benefits";
+@import "modules/articles/article-conntect";
+@import "modules/articles/article-reviews";
+
+// Grids
+@import "modules/grids/grid-stats";

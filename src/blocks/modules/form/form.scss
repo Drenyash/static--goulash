@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+
+  &--footer {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 38px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+
+  &__item {
+    flex-grow: 1;
+
+    &:last-child {
+      flex-grow: 2;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    color: $light;
+  }
+
+  &__desc {
+    max-width: 415px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: $text-gray;
+  }
+}

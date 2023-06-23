@@ -1,0 +1,15 @@
+.reviews-rating {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #3C4563;
+
+  &__icon {
+    display: flex;
+    width: 28px;
+    height: 28px;
+  }
+}

@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+
+  &--footer {
+    align-items: flex-start;
+    column-gap: 50px;
+
+    .nav__link {
+      color: $light;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    color: $text-dark;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

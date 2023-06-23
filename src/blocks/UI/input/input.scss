@@ -1,0 +1,28 @@
+.input {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 11px 0;
+  border-bottom: 2px solid #000000;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-gray;
+  }
+
+  &--gray {
+    width: 278px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    background: #393939;
+
+    &::placeholder {
+      color: #828282;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}

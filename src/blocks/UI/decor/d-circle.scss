@@ -1,0 +1,70 @@
+.d-circle {
+  position: absolute;
+  width: 18%;
+  height: 349px;
+  transform: rotate(-124.492deg);
+  flex-shrink: 0;
+  border-radius: 349.001px;
+  pointer-events: none;
+  z-index: 1;
+
+  &--blue {
+    background: var(--unnamed, linear-gradient(162deg, #0FF 0%, #0075FF 100%));
+    filter: blur(125px);
+  }
+
+  &--green {
+    background: var(--unnamed, linear-gradient(132deg, #02E88D 0%, #84E3E9 100%));
+    filter: blur(100px);
+  }
+
+  &:nth-child(1) {
+    top: 80px;
+    left: 300px;
+    animation: animate 30s infinite alternate linear;
+  }
+  &:nth-child(2) {
+    left: 20px;
+    bottom: 190px;
+    animation: animate 18s infinite 2s alternate ease;
+  }
+  &:nth-child(3) {
+    right: 150px;
+    bottom: 450px;
+    animation: animate 15s infinite alternate linear;
+  }
+  &:nth-child(4) {
+    right: 70px;
+    bottom: 230px;
+    animation: animateBackword 10s infinite alternate ease;
+  }
+  &:nth-child(5) {
+    left: 880px;
+    bottom: 420px;
+    animation: animateBackword 20s infinite alternate ease-in-out;
+  }
+}
+
+@keyframes animate {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(200px, -40px, 0);
+  }
+  to {
+    transform: translate3d(400px, 140px, 0);
+  }
+}
+
+@keyframes animateBackword {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-200px, -340px, 0);
+  }
+  to {
+    transform: translate3d(-300px, 0, 0);
+  }
+}

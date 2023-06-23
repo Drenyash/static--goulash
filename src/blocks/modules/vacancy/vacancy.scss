@@ -1,0 +1,39 @@
+.vacancy {
+  &__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4%;
+    row-gap: 40px;
+    max-width: 470px;
+
+    button {
+      justify-content: center;
+      width: 200px;
+    }
+  }
+  &__decor {
+    position: absolute;
+    bottom: 93px;
+    left: 22%;
+    z-index: 0;
+    pointer-events: none;
+  }
+  &__picture {
+    margin-top: -10%;
+    margin-right: -8%;
+    flex-shrink: 0;
+    height: 520px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}

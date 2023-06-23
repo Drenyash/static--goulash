@@ -1,0 +1,30 @@
+.article-rating {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  &--call {
+    background-image: url('../assets/images/icon-phone.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  &--app {
+    .article-rating__info {
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+  }
+  &__picture {
+    position: absolute;
+    top: -12px;
+    left: -49px;
+    height: 189px;
+  }
+  &__text {
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 27px;
+    color: $text-gray-dark;
+  }
+}

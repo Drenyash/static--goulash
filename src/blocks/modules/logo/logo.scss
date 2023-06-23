@@ -1,0 +1,11 @@
+.logo {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 27px;
+  color: $text-dark;
+  transition: .2s linear;
+
+  &:hover {
+    opacity: .7;
+  }
+}

@@ -1,0 +1,18 @@
+.feedback {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 65px 100px 63px;
+  background-color: $light;
+  border-radius: 32px;
+  z-index: 2;
+
+  &__title {
+    margin-bottom: 100px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    color: $text-dark;
+  }
+}

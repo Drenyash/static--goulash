@@ -1,0 +1,16 @@
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+
+  &__logo {
+    margin-bottom: 20px;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 88.5%;
+    background: linear-gradient(100.59deg, #02E88D -1.46%, #84E3E9 92.56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}

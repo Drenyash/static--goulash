@@ -1,0 +1,20 @@
+.icon-bg {
+  position: absolute;
+  display: flex;
+  bottom: -51%;
+  right: 0;
+  flex-shrink: 0;
+  height: 100%;
+  z-index: -1;
+
+  fill: $gray;
+
+  &--dark {
+    top: -100%;
+    left: 0;
+    bottom: initial;
+    height: 100%;
+    fill: #191919;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+}

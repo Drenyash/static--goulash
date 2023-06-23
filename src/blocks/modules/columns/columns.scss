@@ -3,7 +3,7 @@
     grid-auto-flow: dense;
     grid-template-rows: minmax(0, 1fr);
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: rem(30);
+    gap: rem(40) rem(30);
     &__col {
         position: relative;
         &--1 {
@@ -41,6 +41,24 @@
         }
         &--12 {
             grid-column: span 12;
+        }
+    }
+    &__row {
+        position: relative;
+        &--1 {
+            grid-row: span 1;
+        }
+        &--2 {
+            grid-row: span 2;
+        }
+        &--3 {
+            grid-row: span 3;
+        }
+        &--4 {
+            grid-row: span 4;
+        }
+        &--5 {
+            grid-row: span 5;
         }
     }
     &__col--mob {
