@@ -7,6 +7,26 @@
     width: 68px;
     height: 68px;
     margin-bottom: 25px;
+    transition: .3s linear;
+    opacity: 0;
+    &.focused {
+      .article-benefits__picture--first {
+        opacity: 1;
+        transition-delay: .2s;
+      }
+      .article-benefits__picture--second {
+        opacity: 1;
+        transition-delay: .5s;
+      }
+      .article-benefits__picture--third {
+        opacity: 1;
+        transition-delay: .7s;
+      }
+      .article-benefits__picture--first {
+        opacity: 1;
+        transition-delay: .2s;
+      }
+    }
   }
 
   &__title {

@@ -476,12 +476,17 @@ const section = document.querySelectorAll('[data-section-animate]')
 
 target.forEach((targetEl, idx) => {
     if (targetEl.dataset.animate === 'move') {
+        let x, y;
         section[0].addEventListener("mousemove", (evt) => {
-            const image = targetEl.querySelector('.article-functional__image')
-            const x = evt.clientX / window.innerWidth - 0.4;
-            const y = evt.clientY / window.innerHeight - 0.4;
-            image.style.transform = `translate3D(${-x * 50}px, ${-y * 50}px, 0)`;
+            x = evt.clientX / window.innerWidth - 0.4;
+            y = evt.clientY / window.innerHeight - 0.4;
         });
+        const tiltCard = () => {
+            const image = targetEl.querySelector('.article-functional__image')
+            image.style.transform = `translate3D(${-x * 50}px, ${-y * 50}px, 0)`;
+            requestAnimationFrame(tiltCard);
+        };
+        requestAnimationFrame(tiltCard);
     }
     // if (targetEl.dataset.animate === 'rotate') {
     //     targetEl.addEventListener('mousemove', (evt)=> {
