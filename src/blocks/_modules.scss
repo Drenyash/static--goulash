@@ -7,9 +7,9 @@
 @import "modules/main/main";
 @import "modules/section/section";
 @import "modules/header/header";
-@import "modules/header/header-intro";
+@import "modules/header/header-top";
 @import "modules/intro/intro";
-@import "modules/intro/intro";
+@import "modules/intro/intro-inner";
 @import "modules/nav/nav";
 @import "modules/slider/slider";
 @import "modules/logo/logo";
@@ -21,6 +21,7 @@
 @import "modules/faq/faq";
 @import "modules/social/social";
 @import "modules/address/address";
+@import "modules/feature/feature-list";
 
 // Footer
 @import "modules/footer/footer";
@@ -41,7 +42,7 @@
 @import "UI/decor/d-circle";
 
 // Articles
-@import "modules/articles/article-feature";
+@import "modules/articles/article-functional";
 @import "modules/articles/article-card";
 @import "modules/articles/article-timeline";
 @import "modules/articles/article-graph";

@@ -1,0 +1,119 @@
+.article-functional {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 35px 50px;
+  width: 100%;
+  height: 575px;
+  background-color: rgba(#0176FF, 0.3);
+  border-radius: 30px;
+  transition: .2s linear;
+  overflow: hidden;
+
+  &--first {
+    .article-functional__list {
+      justify-content: flex-end;
+      height: 100%;
+      margin-bottom: 7px;
+    }
+    .article-functional__image {
+      top: 7px;
+      right: -361px;
+    }
+  }
+
+  &--second {
+    background-color: rgba(#21A9FF, 0.3);
+    .article-functional__image {
+      top: 6px;
+      right: 40px;
+    }
+  }
+
+  &--third {
+    background-color: rgba(#87E9FF, 0.3);
+
+    .article-functional__list {
+      justify-content: flex-end;
+      height: 100%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 53px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-dark;
+
+    &:nth-child(2) {
+      padding-left: 43px;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      padding-left: 86px;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+
+    img {
+      position: absolute;
+      top: -100%;
+      right: -100%;
+      transition: .8s ease-in-out;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 858px;
+    height: 705px;
+    flex-shrink: 0;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+  }
+}
+
+.focused {
+  .article-functional__img {
+    &:nth-child(1) {
+      top: 96px;
+      right: -38px;
+    }
+
+    &:nth-child(2) {
+      top: 24px;
+      right: -6px;
+      transition-delay: .4s;
+    }
+
+    &:nth-child(3) {
+      top: -71px;
+      right: -65px;
+      transition-delay: 0.8s;
+    }
+  }
+}

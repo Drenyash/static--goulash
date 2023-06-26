@@ -50,10 +50,10 @@
     transform: translate3d(0, 0, 0);
   }
   50% {
-    transform: translate3d(200px, -40px, 0);
+    transform: translate3d(50%, -25%, 0);
   }
   to {
-    transform: translate3d(400px, 140px, 0);
+    transform: translate3d(70%, 40%, 0);
   }
 }
 
@@ -62,9 +62,9 @@
     transform: translate3d(0, 0, 0);
   }
   50% {
-    transform: translate3d(-200px, -340px, 0);
+    transform: translate3d(-80%, 90%, 0);
   }
   to {
-    transform: translate3d(-300px, 0, 0);
+    transform: translate3d(60%, 0, 0);
   }
 }

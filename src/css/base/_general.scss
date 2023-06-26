@@ -123,6 +123,10 @@ button {
   fill: $gray;
   z-index: -1;
 
+  &--down {
+    bottom: -230px;
+  }
+
   &--top {
       top: -130px;
       transform: matrix(-1, 0, 0, 1, 0, 0);

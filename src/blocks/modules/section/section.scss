@@ -4,12 +4,17 @@
 
   &--dark {
     background-color: $text-dark;
+  }
+
+  &--invert {
     color: $light;
   }
+
   &--bg {
     position: relative;
     overflow: hidden;
   }
+
   &--blur {
     &::after {
       position: absolute;

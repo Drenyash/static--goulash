@@ -20,10 +20,10 @@ module.exports = [
         temp
     }),
     new HtmlWebpackPlugin({
-        template: "./src/pages/page.html",
-        filename: "page.html",
+        template: "./src/pages/partner.html",
+        filename: "partner.html",
         inject: "body",
-        title: "Title child page | Dranik",
+        title: "Стать партнёром | Goulash.Tech",
         head,
         sectionHeader,
         sectionFooter,

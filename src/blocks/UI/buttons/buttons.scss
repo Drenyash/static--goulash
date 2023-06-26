@@ -28,38 +28,47 @@
 
   &--gradient {
     color: $text-dark;
-    background: linear-gradient(100.59deg, #02E88D -1.46%, #84E3E9 92.56%);
 
     &:hover {
       opacity: 1;
+    }
 
-      &::before {
-        animation: skewRotate 3s infinite alternate linear;
-        opacity: 0.8;
+    &--green {
+      background: linear-gradient(100.59deg, #02E88D -1.46%, #84E3E9 92.56%);
+    }
+
+    &--animate {
+      &-green {
+        &:hover {
+          &::before {
+            animation: skewRotate 3s infinite alternate linear;
+            opacity: 0.8;
+          }
+        }
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: '';
+          display: flex;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(100.59deg, #02E88D -1.46%, #84E3E9 92.56%);
+          mix-blend-mode: screen;
+          opacity: 0.45;
+          filter: blur(27.5px);
+          border-radius: 10px;
+          z-index: -1;
+          transition: .2s linear;
+        }
       }
     }
 
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: '';
-      display: flex;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(100.59deg, #02E88D -1.46%, #84E3E9 92.56%);
-      mix-blend-mode: screen;
-      opacity: 0.45;
-      filter: blur(27.5px);
+    &--blue {
+      background: linear-gradient(100.21deg, #00FFFF -19.34%, #0075FF 82.01%);
       border-radius: 10px;
-      z-index: -1;
-      transition: .2s linear;
     }
-  }
-
-  &--gradient-blue {
-    background: linear-gradient(100.21deg, #00FFFF -19.34%, #0075FF 82.01%);
-    border-radius: 10px;
   }
 }
 

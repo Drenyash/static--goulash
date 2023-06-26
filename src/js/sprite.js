@@ -12,6 +12,10 @@ import plus from "../assets/sprite/icon-plus.svg";
 import viber from "../assets/sprite/icon-viber.svg";
 import vk from "../assets/sprite/icon-vk.svg";
 import telegram from "../assets/sprite/icon-telegram.svg";
+import computer from "../assets/sprite/icon-computer.svg";
+import laptop from "../assets/sprite/icon-laptop.svg";
+import mobile from "../assets/sprite/icon-mobile.svg";
+import char from "../assets/sprite/icon-char.svg";
 
 export default {
   timeline,
@@ -28,4 +32,8 @@ export default {
   viber,
   vk,
   telegram,
+  computer,
+  laptop,
+  mobile,
+  char,
 };

@@ -11,6 +11,7 @@
     padding: 10px 0;
     grid-template-columns: 1fr 200px;
     column-gap: 15px;
+
     &:hover {
       .tooltip {
         opacity: 1;
@@ -33,10 +34,12 @@
 
     span {
       display: block;
-      width: auto;
+      width: 0;
+      max-width: 0;
       height: 100%;
       background-color: $green;
       border-radius: 10px;
+      transition: .8s linear;
     }
   }
 
@@ -44,5 +47,12 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+  }
+}
+
+.focused {
+  span {
+    max-width: 100%;
+    transition-delay: .2s;
   }
 }

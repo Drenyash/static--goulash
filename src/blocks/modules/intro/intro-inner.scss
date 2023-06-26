@@ -1,0 +1,25 @@
+.intro-inner {
+  position: relative;
+  z-index: 1;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 89px;
+    &-accent {
+      background: linear-gradient(100.59deg, #02E88D -1.46%, #84E3E9 92.56%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+
+  &__description {
+    max-width: 470px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: $light;
+  }
+}
