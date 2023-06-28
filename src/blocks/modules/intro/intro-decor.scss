@@ -1,0 +1,39 @@
+.intro-decor {
+  position: absolute;
+  right: -91px;
+  bottom: -135px;
+  z-index: 0;
+  pointer-events: none;
+
+  &__img {
+    &--1 {
+      position: absolute;
+      top: 47px;
+      left: 26px;
+      z-index: 0;
+    }
+    &--2 {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    top: 49%;
+    left: 72px;
+    width: 39px;
+    height: 39px;
+    transform: rotate(56.147deg);
+    border-radius: 50%;
+    background: linear-gradient(162deg, #0FF 0%, #0075FF 100%);
+    &--big {
+      left: initial;
+      top: 66%;
+      right: 40px;
+      width: 136px;
+      height: 136px;
+      transform: none;
+    }
+  }
+}

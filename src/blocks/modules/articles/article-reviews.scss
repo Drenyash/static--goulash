@@ -59,11 +59,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
-    background: linear-gradient(100.59deg, #02E88D -1.46%, #84E3E9 92.56%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    color: $primary;
   }
 
   &__company {

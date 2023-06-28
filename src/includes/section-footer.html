@@ -2,24 +2,9 @@
   <div class="container">
     <div class="footer-header">
       <div class="footer-header__meta">
-        <h2 class="footer-header__logo">Goulash.tech</h2>
-        <div class="social">
-          <a href="#" class="social__item">
-            <svg class="social__icon">
-              <use xlink:href="./assets/sprite/sprite.svg#icon-viber"></use>
-            </svg>
-          </a>
-          <a href="#" class="social__item">
-            <svg class="social__icon">
-              <use xlink:href="./assets/sprite/sprite.svg#icon-telegram"></use>
-            </svg>
-          </a>
-          <a href="#" class="social__item">
-            <svg class="social__icon">
-              <use xlink:href="./assets/sprite/sprite.svg#icon-vk"></use>
-            </svg>
-          </a>
-        </div>
+        <a class="footer-header__logo">
+          <img src="./assets/images/logo-footer.svg" alt="">
+        </a>
         <div class="address">
           <a href="tel:+79025092911" class="address__text address__text--phone">
             +7 (902) 509-29-11
@@ -39,25 +24,36 @@
       </nav>
     </div>
     <div class="footer-footer">
-      <p class="sponsor">
-        <img src="./assets/images/osmisle-logo.svg" alt="">
-        Сайт разработан О’Смысле
-      </p>
-      <form class="form form--footer">
-        <p class="form__text">Подпишитесь на новости:</p>
-        <label>
-          <input class="input input--gray" type="text" placeholder="Ваш e-mail">
-        </label>
-        <button class="button button--small-gray">Оставить заявку</button>
-      </form>
+      <div class="social">
+        <a href="#" class="social__item">
+          <svg class="social__icon">
+            <use xlink:href="./assets/sprite/sprite.svg#icon-viber"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__item">
+          <svg class="social__icon">
+            <use xlink:href="./assets/sprite/sprite.svg#icon-telegram"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__item">
+          <svg class="social__icon">
+            <use xlink:href="./assets/sprite/sprite.svg#icon-vk"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer-footer__wrapper">
+        <p class="sponsor">
+          <img src="./assets/images/osmisle-logo.svg" alt="">
+          Сайт разработан О’Смысле
+        </p>
+        <form class="form form--footer">
+          <p class="form__text">Подпишитесь на новости:</p>
+          <label>
+            <input class="input input--gray" type="text" placeholder="Ваш e-mail">
+          </label>
+          <button class="button button--small-gray">Оставить заявку</button>
+        </form>
+      </div>
     </div>
   </div>
 </footer>
-<div class="hidden">
-  <svg>
-    <linearGradient id="gradient">
-      <stop stop-color="#02E88D" />
-      <stop offset="1" stop-color="#84E3E9" />
-    </linearGradient>
-  </svg>
-</div>

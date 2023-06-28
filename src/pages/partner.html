@@ -7,20 +7,25 @@
 <body class="body">
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main">
-  <section class="section section--dark pb-130">
+  <section class="section section--invert section--dark pt-130 pb-130">
     <div class="intro">
       <div class="container">
-        <div class="intro__wrapper">
-            <div class="intro__info">
-                <h1 class="intro__title mb-50">
+        <div class="intro-inner">
+            <div class="intro-inner__info">
+                <h1 class="intro-inner__title mb-50">
                     <span>Вы можете</span>
                     <span class="pl-100">стать нашим</span>
-                    <span class="colored">партнером</span>
+                    <span class="intro-inner__title-accent">партнером</span>
                 </h1>
-                <button class="button button--gradient">Хочу подключиться!</button>
+              <button class="button button--primary button--primary--animate">
+                Хочу подключиться!
+              </button>
             </div>
-            <div class="slider">
-
+            <div class="intro-decor">
+              <img class="intro-decor__img--1" src="./assets/images/partner-2.png" alt="">
+              <img class="intro-decor__img--2" src="./assets/images/partner-1.png" alt="">
+              <div class="intro-decor__circle"></div>
+              <div class="intro-decor__circle intro-decor__circle--big"></div>
             </div>
         </div>
       </div>
