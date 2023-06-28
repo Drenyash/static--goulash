@@ -1,5 +1,6 @@
 const target = document.querySelectorAll("[data-animate]");
 const section = document.querySelectorAll('[data-section-animate]')
+const invertItem = document.querySelector('[data-animate-invert]')
 
 target.forEach((targetEl, idx) => {
     if (targetEl.dataset.animate === 'move') {
@@ -10,7 +11,12 @@ target.forEach((targetEl, idx) => {
         });
         const tiltCard = () => {
             const image = targetEl.querySelector('.article-functional__image')
-            image.style.transform = `translate3D(${-x * 50}px, ${-y * 50}px, 0)`;
+            if (image) {
+                image.style.transform = `translate3D(${x * 50}px, ${y * 50}px, 0)`;
+            } else {
+                invertItem.style.transform = `translate3D(${x * 50}px, ${y * 50}px, 0)`;
+                targetEl.style.transform = `translateX(${-x * 50}px)`;
+            }
             requestAnimationFrame(tiltCard);
         };
         requestAnimationFrame(tiltCard);
