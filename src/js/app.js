@@ -1,6 +1,7 @@
 import Swiper from "swiper";
 import sliderFactory from "./slider";
 import { Accardeone } from "./accardeone";
+import swiper from "swiper";
 
 class App {
   constructor() {

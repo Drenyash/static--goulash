@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  row-gap: 45px;
+  row-gap: 42px;
 
   &--footer {
     flex-direction: row;
@@ -17,10 +17,10 @@
   }
 
   &__item {
-    flex-grow: 1;
+    width: 270px;
 
     &:last-child {
-      flex-grow: 2;
+      width: 370px;
     }
   }
 
@@ -30,10 +30,10 @@
   }
 
   &__desc {
-    max-width: 415px;
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 13px;
+    max-width: 470px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
     color: $text-gray;
   }
 }

@@ -4,7 +4,7 @@
   align-items: center;
 
   &__header {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
     text-align: center;
   }
 
@@ -19,13 +19,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 40px;
+    row-gap: 20px;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    padding: 24px 58px 0 40px;
+    padding: 27px 58px 0 40px;
     background-color: $light;
     border-radius: 10px;
     cursor: pointer;
@@ -38,13 +38,15 @@
     &--active {
       box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.20), 0px 0px 32px -8px rgba(0, 0, 0, 0.12);
       cursor: auto;
+      margin-bottom: 20px;
+
       &:hover {
         opacity: 1;
       }
 
       .faq__content {
         height: auto;
-        padding: 30px 0 48px;
+        padding: 30px 0 54px;
         opacity: 1;
         visibility: visible;
       }
@@ -56,17 +58,18 @@
   }
 
   &__title {
+    font-size: 20px;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 25px;
+    line-height: 108.5%;
     text-transform: uppercase;
+    color: $text-dark;
   }
 
   &__head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 24px;
+    padding-bottom: 31px;
   }
 
   &__content {
@@ -79,8 +82,10 @@
   }
 
   &__text {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: rgba($text-dark, 0.75);
   }
 
   &__icon {

@@ -8,9 +8,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 4%;
-    row-gap: 40px;
-    max-width: 470px;
+    margin-top: 3.6%;
+    row-gap: 50px;
+    max-width: 420px;
 
     button {
       justify-content: center;
@@ -19,8 +19,8 @@
   }
   &__decor {
     position: absolute;
-    bottom: 93px;
-    left: 22%;
+    bottom: 87px;
+    left: 21.5%;
     z-index: 0;
     pointer-events: none;
   }
@@ -32,8 +32,8 @@
   }
 
   &__text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
   }
 }

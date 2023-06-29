@@ -10,7 +10,7 @@
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main">
     <section class="section section--dark">
-        <div class="intro intro--bg pt-80 pb-80">
+        <div class="intro intro--bg pt-110 pb-110">
             <div class="container">
                 <div class="intro-inner">
                     <div class="intro-inner__info">
@@ -24,16 +24,49 @@
                             Хочу подключиться!
                         </button>
                     </div>
-                    <div class="slider">
-
+                    <div class="slider slider--intro" data-slider="intro">
+                        <div class="swiper" data-slide>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <picture class="picture-intro">
+                                        <img src="./assets/images/ipad-1.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture class="picture-intro">
+                                        <img src="./assets/images/ipad-2.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture class="picture-intro">
+                                        <img src="./assets/images/ipad-3.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture class="picture-intro">
+                                        <img src="./assets/images/ipad-4.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture class="picture-intro">
+                                        <img src="./assets/images/ipad-5.png" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-toolbar">
+                                <p class="swiper-pagination-count" data-pagination-current>01</p>
+                                <div class="swiper-pagination slider-pagination" data-pagination></div>
+                                <p class="swiper-pagination-count"  data-pagination-total>05</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section pt-125 pb-55" id="features" data-section-animate>
+    <section class="section pt-110 pb-50" id="features" data-section-animate>
         <div class="container">
-            <h2 class="title mb-55">Наш <span>функционал</span><br/>
+            <h2 class="title mb-50">Наш <span>функционал</span><br/>
                 и набор <span>полезных опций</span></h2>
             <div class="columns">
                 <div class="columns__col columns__col--4">
@@ -93,7 +126,7 @@
             </div>
         </div>
     </section>
-    <section class="section pt-55 pb-55" id="stats">
+    <section class="section pt-60 pb-55" id="stats">
         <div class="container">
             <h2 class="title mb-50">Наша статистика</h2>
             <div class="columns">
@@ -107,8 +140,8 @@
                 </div>
                 <div class="columns__col columns__col--5 columns__row--2">
                     <article class="article-card article-percents" data-observe>
-                        <h3 class="article-title mb-30">Подключено точек:</h3>
-                        <div class="article-percents__item">
+                        <h3 class="article-title mb-32">Подключено точек:</h3>
+                        <div class="article-percents__item article-percents__item--first">
                             <p class="article-percents__text">Нижний Новгород</p>
                             <div class="article-percents__line">
                                 <span style="width: 10%"></span>
@@ -329,7 +362,7 @@
             </div>
         </div>
     </section>
-    <section class="section pt-55 pb-55">
+    <section class="section pt-100 pb-55">
         <div class="container">
             <h2 class="title mb-50">Почему мы?</h2>
             <div class="columns">
@@ -375,7 +408,7 @@
                                   <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
                                 </svg>
                               </span>
-                            Подключиться
+                            подключиться
                         </button>
                     </article>
                 </div>
@@ -397,7 +430,7 @@
             </div>
         </div>
     </section>
-    <section class="section pt-55 pb-55" id="reviews">
+    <section class="section pt-75 pb-55" id="reviews">
         <div class="container">
             <h2 class="title center mb-50">Отзывы</h2>
             <div class="slider mb-30" data-slider="reviews">
@@ -514,7 +547,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button centered">Оставить отзыв</button>
+            <button class="button button--small centered">Оставить отзыв</button>
         </div>
     </section>
     <section class="section section--bg pt-55 pb-100" id="connect">
@@ -551,9 +584,9 @@
             <use xlink:href="./assets/sprite/sprite.svg#icon-bg"></use>
         </svg>
     </section>
-    <section class="section section--blur section--dark section--invert section--animate pt-150 pb-70">
+    <section class="section section--blur section--dark section--invert section--animate pt-190 pb-70">
         <div class="container container--full">
-            <h2 class="title center mb-45">В чем <span>удобство работы</span> с нами?</h2>
+            <h2 class="title center mb-50">В чем <span>удобство работы</span> с нами?</h2>
             <div class="advantages">
                 <picture class="advantages__picture">
                     <img src="./assets/images/laptop.png" alt="">
@@ -599,10 +632,10 @@
             <div class="d-circle d-circle--green"></div>
         </div>
     </section>
-    <section class="section section--dark section--invert pt-55 pb-55" id="become">
+    <section class="section section--dark section--invert pt-75 pb-55" id="become">
         <div class="container">
             <div class="feedback">
-                <h3 class="feedback__title">Я хочу подключить ваше приложение<br> и стать вашим партнером!</h3>
+                <h3 class="feedback__title feedback__title--row">Я хочу подключить ваше приложение<br> и стать вашим партнером!</h3>
                 <div class="form">
                     <fieldset class="form__wrapper">
                         <label class="form__item">
@@ -634,7 +667,7 @@
     <section class="section section--dark section--invert pt-55" id="work">
         <div class="container">
             <div class="vacancy">
-                <h2 class="title center mb-120">Мы находимся в постоянном поиске<br> близких по духу людей</h2>
+                <h2 class="title center mb-100">Мы находимся в постоянном поиске<br> близких по духу людей</h2>
                 <div class="vacancy__body">
                     <div class="vacancy__info">
                         <p class="vacancy__text">
@@ -642,7 +675,7 @@
                             Потому что
                             качественные продукты можно создавать только когда у тебя есть для этого все условия.
                         </p>
-                        <button class="button button--gradient--blue">Перейти</button>
+                        <button class="button button--small button--gradient--blue">Перейти</button>
                     </div>
                     <picture class="vacancy__decor">
                         <img src="./assets/images/arrow-decor.svg" alt="">
@@ -654,7 +687,7 @@
             </div>
         </div>
     </section>
-    <section class="section pt-55 pb-110">
+    <section class="section pt-110 pb-110">
         <div class="container">
             <div class="faq">
                 <div class="faq__header">

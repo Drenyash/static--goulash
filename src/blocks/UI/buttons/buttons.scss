@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-shrink: 0;
-  padding: 22px 50px;
+  padding: 22px 42px;
   border-radius: 10px;
   min-width: 200px;
 
@@ -16,6 +16,12 @@
 
   &:hover {
     opacity: .7;
+  }
+
+  &--small {
+    padding: 18px 34px;
+    font-weight: 500;
+    font-size: 16px;
   }
 
   &--primary {

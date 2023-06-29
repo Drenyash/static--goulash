@@ -9,7 +9,7 @@ target.forEach((targetEl, idx) => {
             x = evt.clientX / window.innerWidth - 0.4;
             y = evt.clientY / window.innerHeight - 0.4;
         });
-        const tiltCard = () => {
+        const moveCard = () => {
             const image = targetEl.querySelector('.article-functional__image')
             if (image) {
                 image.style.transform = `translate3D(${x * 50}px, ${y * 50}px, 0)`;
@@ -17,9 +17,9 @@ target.forEach((targetEl, idx) => {
                 invertItem.style.transform = `translate3D(${x * 50}px, ${y * 50}px, 0)`;
                 targetEl.style.transform = `translateX(${-x * 50}px)`;
             }
-            requestAnimationFrame(tiltCard);
+            requestAnimationFrame(moveCard);
         };
-        requestAnimationFrame(tiltCard);
+        requestAnimationFrame(moveCard);
     }
     // if (targetEl.dataset.animate === 'rotate') {
     //     targetEl.addEventListener('mousemove', (evt)=> {

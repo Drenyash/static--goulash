@@ -1,6 +1,19 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/swiper/swiper-bundle.css":
+/*!***********************************************!*\
+  !*** ./node_modules/swiper/swiper-bundle.css ***!
+  \***********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./node_modules/swiper/swiper.css":
 /*!****************************************!*\
   !*** ./node_modules/swiper/swiper.css ***!
@@ -382,6 +395,66 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/js/Slider/config/intro.js":
+/*!***************************************!*\
+  !*** ./src/js/Slider/config/intro.js ***!
+  \***************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
+/* harmony export */ });
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var swiper_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/swiper-bundle.css */ "./node_modules/swiper/swiper-bundle.css");
+/* harmony import */ var swiper_swiper_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/swiper.css */ "./node_modules/swiper/swiper.css");
+
+
+
+
+const currentPagination = document.querySelector('[data-pagination-current]')
+const totalPagination = document.querySelector('[data-pagination-total]')
+
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
+    const data = {
+        modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.EffectFade, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay],
+        slidesPerView: 1,
+        speed: 300,
+        loop: true,
+        effect: 'fade',
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        on: {
+            slideChange: function () {
+                currentPagination.textContent = `0${this.realIndex + 1}`;
+            },
+            init: function () {
+                currentPagination.textContent = `0${this.realIndex + 1}`;
+                totalPagination.textContent = `0${this.slides.length}`;
+            }
+        }
+    }
+
+    try {
+        if (el.querySelector('[data-pagination]')) {
+            data.pagination = {
+                el: '[data-pagination]',
+                type: 'bullets',
+                bulletActiveClass: 'slider-pagination__bullet--active',
+                bulletClass: 'slider-pagination__bullet',
+            };
+        }
+    } catch (e) {
+    }
+
+    return data;
+}
+
+/***/ }),
+
 /***/ "./src/js/Slider/config/reviews.js":
 /*!*****************************************!*\
   !*** ./src/js/Slider/config/reviews.js ***!
@@ -482,7 +555,7 @@ target.forEach((targetEl, idx) => {
             x = evt.clientX / window.innerWidth - 0.4;
             y = evt.clientY / window.innerHeight - 0.4;
         });
-        const tiltCard = () => {
+        const moveCard = () => {
             const image = targetEl.querySelector('.article-functional__image')
             if (image) {
                 image.style.transform = `translate3D(${x * 50}px, ${y * 50}px, 0)`;
@@ -490,9 +563,9 @@ target.forEach((targetEl, idx) => {
                 invertItem.style.transform = `translate3D(${x * 50}px, ${y * 50}px, 0)`;
                 targetEl.style.transform = `translateX(${-x * 50}px)`;
             }
-            requestAnimationFrame(tiltCard);
+            requestAnimationFrame(moveCard);
         };
-        requestAnimationFrame(tiltCard);
+        requestAnimationFrame(moveCard);
     }
     // if (targetEl.dataset.animate === 'rotate') {
     //     targetEl.addEventListener('mousemove', (evt)=> {
@@ -526,6 +599,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 /* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slider */ "./src/js/slider.js");
 /* harmony import */ var _accardeone__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./accardeone */ "./src/js/accardeone.js");
+
 
 
 
@@ -635,11 +709,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var _Slider_config_reviews__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Slider/config/reviews */ "./src/js/Slider/config/reviews.js");
+/* harmony import */ var _Slider_config_intro__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Slider/config/intro */ "./src/js/Slider/config/intro.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
   const name = el.getAttribute('data-slider');
   if (name === 'reviews') return (0,_Slider_config_reviews__WEBPACK_IMPORTED_MODULE_0__["default"])(el);
+  if (name === 'intro') return (0,_Slider_config_intro__WEBPACK_IMPORTED_MODULE_1__["default"])(el);
 
   console.error('Конфигурационный файл для слайдера не найден');
 }

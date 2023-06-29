@@ -8,7 +8,7 @@
   &__picture {
     position: relative;
     display: flex;
-    padding-right: 120px;
+    padding-right: 93px;
     pointer-events: none;
     z-index: 2;
   }
@@ -17,17 +17,17 @@
     position: relative;
     display: grid;
     max-width: 1170px;
-    margin: -340px auto 0;
+    margin: -351px auto 0;
     grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
+    gap: 93px;
     z-index: 3;
   }
 
   &__title {
-    margin-bottom: 8px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
 
     span {
       color: $blue;
@@ -35,8 +35,8 @@
   }
 
   &__text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
   }
 }

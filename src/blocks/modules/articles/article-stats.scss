@@ -7,9 +7,10 @@
   &__item {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 30px 20px 30px 30px;
     width: 100%;
     max-width: 270px;
+    height: 193px;
     background: #F5F6FA;
     border-radius: 15px;
     transition: .2s linear;
@@ -25,7 +26,8 @@
   }
   &__icon {
     display: flex;
-    margin-bottom: 10px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
     width: 30px;
     height: 30px;
     .main {

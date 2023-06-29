@@ -12,6 +12,10 @@
     grid-template-columns: 1fr 200px;
     column-gap: 15px;
 
+    &--first {
+      padding-top: 0;
+    }
+
     &:hover {
       .tooltip {
         opacity: 1;

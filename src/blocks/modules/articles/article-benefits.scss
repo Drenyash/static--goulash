@@ -1,12 +1,14 @@
 .article-benefits {
+  padding: 30px 40px;
+
   &--big {
-    padding: 70px;
+    padding: 79px 70px;
   }
 
   &__picture {
     width: 68px;
     height: 68px;
-    margin-bottom: 25px;
+    margin: 7px 0 25px 0;
     transition: .3s linear;
 
     &--first {
@@ -31,16 +33,16 @@
   }
 
   &__title {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     color: $blue;
   }
 
   &__text {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 

@@ -8,11 +8,14 @@
   z-index: 2;
 
   &__title {
-    margin-bottom: 100px;
+    margin-bottom: 88px;
     font-weight: 700;
     font-size: 32px;
     line-height: 35px;
     text-align: center;
     color: $text-dark;
+    &--row {
+      margin-bottom: 53px;
+    }
   }
 }
