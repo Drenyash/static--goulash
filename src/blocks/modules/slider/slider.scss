@@ -38,10 +38,38 @@
 
 .swiper {
   height: min-content;
+  &--full {
+    position: relative;
+    overflow: visible !important;
+    .swiper-wrapper {
+      max-width: 1170px;
+    }
+    .swiper-slide {
+      opacity: 0;
+      visibility: hidden;
+      transition: .2s linear;
+    }
+    .slider__item--visible {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.swiper-tooltip {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
 .swiper-slide {
   max-width: 100%;
+  &--auto {
+    height: auto !important;
+  }
 }
 
 .swiper-toolbar {
@@ -59,4 +87,11 @@
   line-height: 1;
   color: #B5B5B5;
   text-align: center;
+}
+
+.slider__icon {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  fill: $light;
 }

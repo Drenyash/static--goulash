@@ -1,75 +1,118 @@
 .article-reviews {
-  padding: 57px 57px 32px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 33px 50px;
   background-color: $light;
-  box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
-  border-radius: 16px;
-  &__text {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-bottom: 35px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #1E1E1E;
-    opacity: 0.75;
-  }
+  border-radius: 15px;
+  height: 100%;
 
-  &__title {
-    margin-bottom: 16px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    color: #2B2B2B;
-  }
-  &__author {
+  &__header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  &__profile {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
   }
 
   &__info {
     display: flex;
-    align-items: center;
-    column-gap: 24px;
+    flex-direction: column;
   }
 
-  &__picture {
+  &__name {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #0176FE;
+  }
+
+  &__company {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #C5C5C5;
+  }
+
+  &__avatar {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     overflow: hidden;
-    width: 40px;
-    height: 40px;
+    flex-shrink: 0;
 
     img {
       display: block;
       width: 100%;
-      height: 100%;
+      height: auto;
       object-fit: cover;
-      object-position: center;
     }
   }
 
-  &__name {
-    margin-bottom: 4px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 22px;
-    color: $primary;
+  &__video {
+    position: relative;
+    display: flex;
+    margin-top: 27px;
+    height: 170px;
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      display: flex;
+      background: rgba(49, 49, 49, 0.50);
+      z-index: 0;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      transform: translate(-50%, -50%);
+      display: flex;
+      width: 63px;
+      height: 63px;
+      background-image: url('../assets/images/icon-play.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
   }
 
-  &__company {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
-    color: #696969;
+  &__logo {
+    display: flex;
+    width: 135px;
+    height: 52px;
   }
 
-  &__rating {
-    margin-left: auto;
+  &__text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 152%; /* 24.32px */
+    color: #1E1E1E;
   }
 }

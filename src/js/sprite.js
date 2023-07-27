@@ -20,11 +20,13 @@ import handshake from "../assets/sprite/icon-handshake.svg";
 import system from "../assets/sprite/icon-system.svg";
 import way from "../assets/sprite/icon-way.svg";
 import graph from "../assets/sprite/icon-graph.svg";
+import arrowRight from "../assets/sprite/icon-arrow-right.svg";
 
 export default {
   iconFire,
   people,
   arrowDown,
+  arrowRight,
   globe,
   location,
   star,

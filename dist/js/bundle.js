@@ -72,6 +72,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/assets/sprite/icon-arrow-right.svg":
+/*!************************************************!*\
+  !*** ./src/assets/sprite/icon-arrow-right.svg ***!
+  \************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon-arrow-right-usage",
+      viewBox: "0 0 24 24",
+      url: "/assets/sprite/" + "sprite.svg#icon-arrow-right-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./src/assets/sprite/icon-bg.svg":
 /*!***************************************!*\
   !*** ./src/assets/sprite/icon-bg.svg ***!
@@ -643,22 +662,6 @@ target.forEach((targetEl, idx) => {
         };
         requestAnimationFrame(moveCard);
     }
-    // if (targetEl.dataset.animate === 'rotate') {
-    //     targetEl.addEventListener('mousemove', (evt)=> {
-    //         const width = targetEl.offsetWidth;
-    //         const height = targetEl.offsetHeight;
-    //         const mouseX = evt.offsetX - width / 2;
-    //         const mouseY = height / 2 - evt.offsetY;
-    //         const maxAngle = 20;
-    //         const angleX = -(mouseY / height) * maxAngle;
-    //         const angleY = (mouseX / width) * maxAngle;
-    //
-    //         targetEl.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`;
-    //     })
-    //     targetEl.addEventListener('mouseleave', ()=> {
-    //         targetEl.style.transform = 'none'
-    //     })
-    // }
 })
 
 
@@ -830,6 +833,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_sprite_icon_system_svg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../assets/sprite/icon-system.svg */ "./src/assets/sprite/icon-system.svg");
 /* harmony import */ var _assets_sprite_icon_way_svg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../assets/sprite/icon-way.svg */ "./src/assets/sprite/icon-way.svg");
 /* harmony import */ var _assets_sprite_icon_graph_svg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../assets/sprite/icon-graph.svg */ "./src/assets/sprite/icon-graph.svg");
+/* harmony import */ var _assets_sprite_icon_arrow_right_svg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../assets/sprite/icon-arrow-right.svg */ "./src/assets/sprite/icon-arrow-right.svg");
+
 
 
 
@@ -857,6 +862,7 @@ __webpack_require__.r(__webpack_exports__);
   iconFire: _assets_sprite_icon_fire_svg__WEBPACK_IMPORTED_MODULE_0__["default"],
   people: _assets_sprite_icon_people_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
   arrowDown: _assets_sprite_icon_arrow_down_svg__WEBPACK_IMPORTED_MODULE_2__["default"],
+  arrowRight: _assets_sprite_icon_arrow_right_svg__WEBPACK_IMPORTED_MODULE_22__["default"],
   globe: _assets_sprite_icon_globe_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
   location: _assets_sprite_icon_location_svg__WEBPACK_IMPORTED_MODULE_4__["default"],
   star: _assets_sprite_icon_star_svg__WEBPACK_IMPORTED_MODULE_5__["default"],

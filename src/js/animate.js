@@ -21,20 +21,4 @@ target.forEach((targetEl, idx) => {
         };
         requestAnimationFrame(moveCard);
     }
-    // if (targetEl.dataset.animate === 'rotate') {
-    //     targetEl.addEventListener('mousemove', (evt)=> {
-    //         const width = targetEl.offsetWidth;
-    //         const height = targetEl.offsetHeight;
-    //         const mouseX = evt.offsetX - width / 2;
-    //         const mouseY = height / 2 - evt.offsetY;
-    //         const maxAngle = 20;
-    //         const angleX = -(mouseY / height) * maxAngle;
-    //         const angleY = (mouseX / width) * maxAngle;
-    //
-    //         targetEl.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`;
-    //     })
-    //     targetEl.addEventListener('mouseleave', ()=> {
-    //         targetEl.style.transform = 'none'
-    //     })
-    // }
 })

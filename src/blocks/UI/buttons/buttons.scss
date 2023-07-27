@@ -68,6 +68,44 @@
   }
 }
 
+.button-slider {
+  position: absolute;
+  top: 0;
+  right: -70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #0176FE;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity .2s linear;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &--prev {
+    position: absolute;
+    top: 0;
+    right: initial;
+    left: -70px;
+    transform: rotate(-180deg);
+  }
+}
+
+.slider__button--disabled {
+  background-color: $light;
+  pointer-events: none;
+  &:hover {
+    opacity: 1;
+  }
+  .slider__icon {
+    fill: $text-dark;
+  }
+}
+
 @keyframes skewRotate {
   from {
     transform: skew(0, 0) rotate(0deg);
