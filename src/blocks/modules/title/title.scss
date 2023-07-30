@@ -5,6 +5,10 @@
   line-height: 108.5%;
   z-index: 2;
 
+  @include r(1200) {
+    font-size: 26px;
+  }
+
   span {
     font-weight: 700;
     background: linear-gradient(100.21deg, #00FFFF -19.34%, #0075FF 82.01%);

@@ -4,14 +4,14 @@ import "swiper/swiper.css"
 export default function (el) {
     const data = {
         modules: [Navigation, Pagination],
-        spaceBetween: 0,
+        spaceBetween: 10,
         slidesPerView: 1,
         slideVisibleClass: 'slider__item--visible',
         watchSlidesProgress: true,
         breakpoints: {
             1200: {
                 spaceBetween: 30,
-                slidesPerView: 2,
+                slidesPerView: 3,
             }
         }
     }

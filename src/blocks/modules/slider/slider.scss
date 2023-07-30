@@ -41,6 +41,9 @@
   &--full {
     position: relative;
     overflow: visible !important;
+    @include r(1200) {
+      overflow: hidden !important;
+    }
     .swiper-wrapper {
       max-width: 1170px;
     }

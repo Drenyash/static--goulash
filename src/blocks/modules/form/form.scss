@@ -3,6 +3,10 @@
   flex-direction: column;
   row-gap: 42px;
 
+  @include r(1200) {
+    gap: 17px;
+  }
+
   &--footer {
     flex-direction: row;
     align-items: center;
@@ -14,13 +18,22 @@
     align-items: center;
     justify-content: space-between;
     column-gap: 30px;
+
+    @include r(1200) {
+      flex-direction: column;
+    }
   }
 
   &__item {
     width: 270px;
-
+    @include r(1200) {
+      width: 100%;
+    }
     &:last-child {
       width: 370px;
+      @include r(1200) {
+        width: 100%;
+      }
     }
   }
 
@@ -35,5 +48,15 @@
     font-size: 12px;
     line-height: 15px;
     color: $text-gray;
+
+    @include r(1200) {
+      margin-bottom: 18px;
+      font-size: 11px;
+    }
+  }
+
+  .button {
+    width: 100%;
+    justify-content: center;
   }
 }

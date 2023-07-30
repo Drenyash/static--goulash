@@ -4,6 +4,11 @@
   justify-content: space-between;
   gap: 30px;
 
+  @include r(1200) {
+    flex-direction: column;
+    gap: 50px;
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
@@ -33,6 +38,13 @@
       background-size: cover;
       transform: rotate(-20deg);
       z-index: -1;
+
+      @include r(1200) {
+        top: -36px;
+        left: 0;
+        width: 150px;
+        height: 81px;
+      }
     }
     &::after {
       position: absolute;
@@ -48,6 +60,12 @@
       background-size: cover;
       z-index: -1;
       transform: rotate(-20deg);
+      @include r(1200) {
+        bottom: 10px;
+        right: 0;
+        width: 165px;
+        height: 83px;
+      }
     }
   }
 }

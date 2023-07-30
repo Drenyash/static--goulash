@@ -6,6 +6,11 @@
   border-bottom: 2px solid #000000;
   color: $text-dark;
 
+  @include r(1200) {
+    font-size: 16px;
+    border-color: #EDEDED;
+  }
+
   &::placeholder {
     font-weight: 500;
     font-size: 18px;

@@ -7,6 +7,10 @@
   border-radius: 32px;
   z-index: 2;
 
+  @include r(1200) {
+    padding: 24px 28px;
+  }
+
   &__title {
     margin-bottom: 88px;
     font-weight: 700;
@@ -14,8 +18,16 @@
     line-height: 35px;
     text-align: center;
     color: $text-dark;
+
+    @include r(1200) {
+      font-size: 24px;
+    }
+
     &--row {
       margin-bottom: 53px;
+      @include r(1200) {
+        margin-bottom: 16px;
+      }
     }
   }
 }
