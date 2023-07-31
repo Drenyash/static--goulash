@@ -538,6 +538,50 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/js/Slider/config/features.js":
+/*!******************************************!*\
+  !*** ./src/js/Slider/config/features.js ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
+/* harmony export */ });
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var swiper_swiper_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/swiper.css */ "./node_modules/swiper/swiper.css");
+
+
+
+const desktop = window.matchMedia('(min-width: 1200px)');
+const mobile = window.matchMedia('(min-width: 0px) and (max-width: 1199px)');
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
+    const data = {
+        modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
+        spaceBetween: 10,
+        slidesPerView: 'auto',
+        slideVisibleClass: 'slider__item--visible',
+        watchSlidesProgress: true,
+    }
+
+    try {
+        if (el.querySelector('[data-nav]')) {
+            data.navigation = {
+                nextEl: el.querySelector('[data-button-next]'),
+                prevEl: el.querySelector('[data-button-prev]'),
+                disabledClass: 'slider__button--disabled',
+            };
+        }
+    } catch (e) {
+    }
+
+    return data;
+}
+
+
+/***/ }),
+
 /***/ "./src/js/Slider/config/intro.js":
 /*!***************************************!*\
   !*** ./src/js/Slider/config/intro.js ***!
@@ -844,6 +888,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Slider_config_reviews__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Slider/config/reviews */ "./src/js/Slider/config/reviews.js");
 /* harmony import */ var _Slider_config_intro__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Slider/config/intro */ "./src/js/Slider/config/intro.js");
 /* harmony import */ var _Slider_config_data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Slider/config/data */ "./src/js/Slider/config/data.js");
+/* harmony import */ var _Slider_config_features__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Slider/config/features */ "./src/js/Slider/config/features.js");
+
 
 
 
@@ -853,6 +899,7 @@ __webpack_require__.r(__webpack_exports__);
   if (name === 'reviews') return (0,_Slider_config_reviews__WEBPACK_IMPORTED_MODULE_0__["default"])(el);
   if (name === 'intro') return (0,_Slider_config_intro__WEBPACK_IMPORTED_MODULE_1__["default"])(el);
   if (name === 'data') return (0,_Slider_config_data__WEBPACK_IMPORTED_MODULE_2__["default"])(el);
+  if (name === 'features') return (0,_Slider_config_features__WEBPACK_IMPORTED_MODULE_3__["default"])(el);
 
   console.error('Конфигурационный файл для слайдера не найден');
 }

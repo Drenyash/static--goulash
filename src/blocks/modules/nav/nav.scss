@@ -3,12 +3,38 @@
   align-items: center;
   column-gap: 21px;
 
+  @include r(1200) {
+    &:not(.nav--footer) {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 17px;
+      padding: 30px 24px 30px 30px;
+      background-color: #F4F4F4;
+      transform: translateX(-100%);
+      z-index: 4;
+    }
+  }
+
   &--footer {
     align-items: flex-start;
-    column-gap: 50px;
+    column-gap: 18px;
+
+    @include r(1200) {
+      row-gap: 14px;
+      flex-direction: column;
+    }
 
     .nav__link {
+      font-size: 16px;
       color: $light;
+
+      @include r(1200) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -16,8 +42,22 @@
     font-size: 18px;
     color: $text-dark;
 
+    @include r(1200) {
+      font-weight: 300;
+      font-size: 16px;
+    }
+
     &:hover {
       text-decoration: underline;
+    }
+  }
+
+  .button {
+    display: none;
+    @include r(1200) {
+      display: flex;
+      margin-top: 56px;
+      padding: 13px 16px;
     }
   }
 }

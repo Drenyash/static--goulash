@@ -4,6 +4,10 @@
   justify-content: space-between;
   z-index: 1;
 
+  @include r(1200) {
+    height: 100%;
+  }
+
   &__title {
     display: flex;
     flex-direction: column;
@@ -12,6 +16,12 @@
     font-weight: 700;
     line-height: 108.5%;
     color: $light;
+
+    @include r(1200) {
+      font-size: 24px;
+      text-align: center;
+    }
+
     &-accent {
       color: $primary;
     }
@@ -22,5 +32,27 @@
     font-size: 20px;
     font-weight: 400;
     color: $light;
+
+    @include r(1200) {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include r(1200) {
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  .button {
+    @include r(1200) {
+      margin-top: auto;
+      font-size: 16px;
+    }
   }
 }

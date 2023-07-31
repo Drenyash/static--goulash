@@ -3,4 +3,8 @@
   align-items: flex-start;
   justify-content: space-between;
   column-gap: 50px;
+
+  @include r(1200) {
+    align-items: center;
+  }
 }

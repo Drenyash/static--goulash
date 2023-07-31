@@ -3,18 +3,28 @@
   flex-direction: column;
   row-gap: 14px;
 
+  @include r(1200) {
+    margin-bottom: 24px;
+  }
+
   &__text {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20.5px;
 
     &--phone {
       display: flex;
       align-items: center;
+      font-size: 18px;
       column-gap: 14px;
       font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        opacity: .7;
+      }
       &::before {
         content: '·';
-        font-size: 22px;
+        flex-shrink: 0;
+        font-size: 32px;
         color: $green;
       }
     }

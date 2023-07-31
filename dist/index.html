@@ -27,13 +27,18 @@
                 <a href="#features" class="nav__link">Преимущества</a>
                 <a href="#work" class="nav__link">Работа у нас</a>
                 <a href="#become" class="nav__link">Стать партнером</a>
+                <button class="button" type="submit">Хочу подключиться!</button>
             </nav>
+            <div class="burger">
+                <span class="burger__item"></span>
+            </div>
         </div>
     </div>
 </header>
+
 <main class="main">
     <section class="section section--dark">
-        <div class="intro intro--bg pt-110 pb-110">
+        <div class="intro intro--bg pt-110 ptm-70 pb-110 pbm-50">
             <div class="container">
                 <div class="intro-inner">
                     <div class="intro-inner__info">
@@ -52,7 +57,7 @@
             </div>
         </div>
     </section>
-    <section class="section pt-110 pb-55">
+    <section class="section pt-110 ptm-100 pb-55 pbm-50">
         <div class="container">
             <h2 class="title mb-40">
                 Экосистема - <span>всё в одном</span>
@@ -106,8 +111,8 @@
             </div>
         </div>
     </section>
-    <section class="section pt-55 pb-55">
-        <div class="container">
+    <section class="section pt-55 ptm-50 pb-55">
+        <div class="container container--mob-full">
             <h2 class="title mb-40">Наша статистика</h2>
             <div class="stats">
                 <div class="stats__grid">
@@ -155,7 +160,7 @@
             </div>
         </div>
     </section>
-    <section class="section z-index--1 pt-55 pb-55">
+    <section class="section z-index--1 pt-55 ptm-50 pb-55 pbm-50">
         <div class="container">
             <h2 class="title mb-40">После перехода на нашу систему</h2>
             <div class="slider" data-slider="data">
@@ -214,59 +219,78 @@
             <use xlink:href="./assets/sprite/sprite.svg#icon-bg"></use>
         </svg>
     </section>
-    <section class="section pt-55 pb-55">
+    <section class="section pt-55 ptm-50 pb-55 pbm-70">
         <div class="container">
             <h2 class="title mb-40">Преимущества</h2>
-            <div class="features">
-                <div class="features__item">
-                    <svg class="features__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-system"></use>
-                    </svg>
-                    <h3 class="features__title">Единая экосистема</h3>
-                    <p class="features__text">
-                        Забудьте о настройке множества интеграций. В рамках одной сисемы: сайт, приложение, ERM, CRM,
-                        маркетинговый блок, маршрутизация, набивка и т.д.
-                    </p>
+            <div class="slider mbm-20" data-slider="features">
+                <div class="swiper swiper--auto" data-slide>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="features__item">
+                                <svg class="features__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-system"></use>
+                                </svg>
+                                <h3 class="features__title">Единая экосистема</h3>
+                                <p class="features__text">
+                                    Забудьте о настройке множества интеграций. В рамках одной сисемы: сайт, приложение, ERM, CRM,
+                                    маркетинговый блок, маршрутизация, набивка и т.д.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="features__item">
+                                <svg class="features__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-way"></use>
+                                </svg>
+                                <h3 class="features__title">Единственная<br> маршрутизация на рынке</h3>
+                                <p class="features__text">
+                                    Система умеет точно рассчитать время доставки.
+                                    Автоматическое распределение заказов согласно многим критериям.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="features__item">
+                                <svg class="features__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-handshake"></use>
+                                </svg>
+                                <h3 class="features__title">Партнерская модель</h3>
+                                <p class="features__text">
+                                    Мы заинтересованы в развитии вашего бизнеса.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--mob-hidden">
+                            <div class="features__item features__item--color-black features__item--big">
+                                <picture class="features__picture">
+                                    <img src="./assets/images/laptop.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="features__item">
+                                <svg class="features__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-graph"></use>
+                                </svg>
+                                <h3 class="features__title">Рост выручки</h3>
+                                <p class="features__text">
+                                    Подключайте модульное решение с бессрочным сроком лицензии и работайте только с нужным
+                                    функционалом. Все для работы с каждым заведением в сети: кассовый модуль, складской учет, отчеты
+                                    для управляющего.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="features__item">
-                    <svg class="features__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-way"></use>
-                    </svg>
-                    <h3 class="features__title">Единственная<br> маршрутизация на рынке</h3>
-                    <p class="features__text">
-                        Система умеет точно рассчитать время доставки.
-                        Автоматическое распределение заказов согласно многим критериям.
-                    </p>
-                </div>
-                <div class="features__item">
-                    <svg class="features__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-handshake"></use>
-                    </svg>
-                    <h3 class="features__title">Партнерская модель</h3>
-                    <p class="features__text">
-                        Мы заинтересованы в развитии вашего бизнеса.
-                    </p>
-                </div>
-                <div class="features__item features__item--color-black features__item--big">
-                    <picture class="features__picture">
-                        <img src="./assets/images/laptop.png" alt="">
-                    </picture>
-                </div>
-                <div class="features__item">
-                    <svg class="features__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-graph"></use>
-                    </svg>
-                    <h3 class="features__title">Рост выручки</h3>
-                    <p class="features__text">
-                        Подключайте модульное решение с бессрочным сроком лицензии и работайте только с нужным
-                        функционалом. Все для работы с каждым заведением в сети: кассовый модуль, складской учет, отчеты
-                        для управляющего.
-                    </p>
-                </div>
+            </div>
+            <div class="features__item features__item--mobile desktop-hidden">
+                <picture class="features__picture">
+                    <img src="./assets/images/laptop.png" alt="">
+                </picture>
             </div>
         </div>
     </section>
-    <section class="section section--dark section--invert section--animate pt-600 pb-20">
+    <section class="section section--dark section--invert section--animate pt-600 ptm-50 pb-20">
         <div class="container">
             <h2 class="title mb-50">Отзывы</h2>
             <div class="slider mb-30" data-slider="reviews">
@@ -535,9 +559,9 @@
     <section class="section section--dark section--invert pt-55" id="work">
         <div class="container">
             <div class="vacancy">
-                <h2 class="title center mb-100">Мы находимся в постоянном поиске<br> близких по духу людей</h2>
+                <h2 class="title center mb-100 mbm-25">Мы находимся в постоянном поиске<br> близких по духу людей</h2>
                 <div class="vacancy__body">
-                    <div class="vacancy__info">
+                    <div class="vacancy__info mbm-45">
                         <p class="vacancy__text">
                             У тебя будут реальные возможности для роста, но кроме этого, с нами легко и комфортно.
                             Потому что
@@ -571,18 +595,35 @@
             Екатеринбург, ул. Горького, д. 65
           </p>
         </div>
+        <div class="social desktop-hidden">
+          <a href="#" class="social__item">
+            <svg class="social__icon">
+              <use xlink:href="./assets/sprite/sprite.svg#icon-viber"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__item">
+            <svg class="social__icon">
+              <use xlink:href="./assets/sprite/sprite.svg#icon-telegram"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__item">
+            <svg class="social__icon">
+              <use xlink:href="./assets/sprite/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </div>
       </div>
       <nav class="nav nav--footer">
-        <a href="#" class="nav__link">продукты</a>
-        <a href="#" class="nav__link">тарифы</a>
-        <a href="#" class="nav__link">где купить</a>
-        <a href="#" class="nav__link">база знаний</a>
-        <a href="#" class="nav__link">поддержка</a>
-        <a href="#" class="nav__link">блог</a>
+        <a href="#" class="nav__link">Наша статистика</a>
+        <a href="#" class="nav__link">Отзывы</a>
+        <a href="#" class="nav__link">Подключить</a>
+        <a href="#" class="nav__link">Преимущества</a>
+        <a href="#" class="nav__link">Стать партнером</a>
+        <a href="#" class="nav__link">Работа у нас</a>
       </nav>
     </div>
     <div class="footer-footer">
-      <div class="social">
+      <div class="social mob-hidden">
         <a href="#" class="social__item">
           <svg class="social__icon">
             <use xlink:href="./assets/sprite/sprite.svg#icon-viber"></use>
@@ -615,6 +656,7 @@
     </div>
   </div>
 </footer>
+
 <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
 <section class="section">
     <div class="container">

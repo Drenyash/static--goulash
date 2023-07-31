@@ -2,33 +2,57 @@
   &__body {
     position: relative;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+
+    @include r(1200) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
+
   &__info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 3.6%;
     row-gap: 50px;
     max-width: 420px;
+
+    @include r(1200) {
+      text-align: center;
+      align-items: center;
+    }
 
     button {
       justify-content: center;
       width: 200px;
     }
   }
+
   &__decor {
     position: absolute;
-    bottom: 87px;
-    left: 21.5%;
+    bottom: 30px;
+    left: 23.5%;
+    transform: rotate(12deg);
     z-index: 0;
     pointer-events: none;
+
+    @include r(1200) {
+      display: none;
+    }
   }
+
   &__picture {
+    display: flex;
+    align-items: flex-end;
     margin-top: -10%;
-    margin-right: -8%;
     flex-shrink: 0;
     height: 520px;
+
+    @include r(1200) {
+      margin: 0;
+      height: auto;
+    }
   }
 
   &__text {

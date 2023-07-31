@@ -1,6 +1,7 @@
 .button {
   position: relative;
   display: flex;
+  justify-content: center;
   flex-shrink: 0;
   padding: 22px 42px;
   border-radius: 10px;
@@ -9,6 +10,7 @@
   font-weight: 600;
   font-size: 18px;
   color: $light;
+  text-align: center;
   background-color: $text-dark;
 
   cursor: pointer;

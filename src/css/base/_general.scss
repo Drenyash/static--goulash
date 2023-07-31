@@ -134,12 +134,23 @@ button {
   &--down {
     bottom: -570px;
     right: 0;
+
+    @include r(1200) {
+      top: 210%;
+      right: 0;
+      width: 100%;
+    }
   }
 
   &--top {
     top: -130px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     fill: $text-dark;
+
+    @include r(1200) {
+      top: -174px;
+      width: 100%;
+    }
   }
 }
 

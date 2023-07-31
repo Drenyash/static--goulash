@@ -64,3 +64,9 @@
     }
   }
 }
+
+.decor {
+  @include r(1200) {
+    display: none;
+  }
+}

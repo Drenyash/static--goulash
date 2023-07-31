@@ -65,6 +65,11 @@
       visibility: hidden;
     }
   }
+  &--auto {
+    .swiper-slide {
+      max-width: 272px;
+    }
+  }
 }
 
 .swiper-tooltip {
@@ -81,6 +86,17 @@
   &--auto {
     height: auto !important;
   }
+}
+
+.swiper-slide, swiper-slide {
+  display: flex !important;
+  height: auto !important;
+}
+
+.swiper-slide.swiper-slide--mob-hidden {
+    @include r(1200) {
+      display: none !important;
+    }
 }
 
 .swiper-toolbar {

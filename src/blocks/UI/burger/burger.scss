@@ -1,0 +1,41 @@
+.burger {
+  position: relative;
+  display: none;
+  width: 16px;
+  height: 12px;
+
+  @include r(1200) {
+    display: flex;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: flex;
+    width: 16px;
+    height: 2px;
+    background-color: #000;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    top: 10px;
+    right: 0;
+    width: 9px;
+  }
+
+  &__item {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: flex;
+    width: 16px;
+    height: 2px;
+    background-color: #000;
+  }
+}

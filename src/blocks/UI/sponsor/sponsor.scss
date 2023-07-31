@@ -5,4 +5,8 @@
   font-size: 16px;
   font-weight: 500;
   color: $primary;
+
+  @include r(1200) {
+    margin-top: 40px;
+  }
 }

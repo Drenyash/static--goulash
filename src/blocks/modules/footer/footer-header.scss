@@ -3,8 +3,18 @@
   justify-content: space-between;
   margin-bottom: 32px;
 
+  @include r(1200) {
+    flex-direction: column;
+  }
+
   &__logo {
     display: flex;
     margin-bottom: 25px;
+  }
+
+  &__meta {
+    @include r(1200) {
+      margin-bottom: 40px;
+    }
   }
 }
