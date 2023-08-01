@@ -16,7 +16,16 @@
       background-color: #F4F4F4;
       transform: translateX(-100%);
       z-index: 4;
+      opacity: 0;
+      transition: opacity .2s linear, transform .2s linear;
     }
+  }
+
+  &.active {
+    left: initial;
+    right: 0;
+    opacity: 1;
+    transform: translateX(0);
   }
 
   &--footer {

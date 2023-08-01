@@ -83,7 +83,7 @@
             </div>
         </div>
     </section>
-    <section class="section pt-55 ptm-50 pb-55">
+    <section class="section pt-55 ptm-50 pb-55" id="stats">
         <div class="container container--mob-full">
             <h2 class="title mb-40">Наша статистика</h2>
             <div class="stats">
@@ -191,11 +191,11 @@
             <use xlink:href="./assets/sprite/sprite.svg#icon-bg"></use>
         </svg>
     </section>
-    <section class="section pt-55 ptm-50 pb-55 pbm-70">
+    <section class="section pt-55 ptm-50 pb-55 pbm-70" id="features">
         <div class="container">
             <h2 class="title mb-40">Преимущества</h2>
-            <div class="slider mbm-20" data-slider="features">
-                <div class="swiper swiper--auto" data-slide>
+            <div class="slider mbm-20" data-slider="features" data-desktop>
+                <div class="swiper swiper--grid swiper--auto" data-slide>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="features__item">
@@ -264,7 +264,7 @@
     </section>
     <section class="section section--dark section--invert section--animate pt-600 ptm-50 pb-20">
         <div class="container">
-            <h2 class="title mb-50">Отзывы</h2>
+            <h2 class="title mb-50" id="reviews">Отзывы</h2>
             <div class="slider mb-30" data-slider="reviews">
                 <div class="swiper swiper--full" data-slide>
                     <div class="swiper-wrapper">
@@ -385,7 +385,7 @@
             <div class="d-circle d-circle--green"></div>
         </div>
     </section>
-    <section class="section section--dark section--invert pt-100 pb-120" id="become">
+    <section class="section section--dark section--invert pt-100 ptm-5 pb-120 pbm-80" id="connect">
         <div class="container">
             <h2 class="title mb-50">Отправить заявку</h2>
             <div class="feedback">
@@ -410,7 +410,7 @@
                             персональных
                             данных и соглашаетесь с политикой обработки персональных данных
                         </p>
-                        <button class="button" type="submit">Хочу подключиться!</button>
+                        <button class="button button--gradient--blue" type="submit">Хочу подключиться!</button>
                     </fieldset>
                 </form>
             </div>
@@ -418,7 +418,7 @@
         <img class="decor-line" src="./assets/images/icon-line.svg" alt="">
         <img class="decor-line decor-line--left" src="./assets/images/icon-line-left.svg" alt="">
     </section>
-    <section class="section pt-100 pb-100">
+    <section class="section pt-100 ptm-50 pb-100" id="become">
         <div class="container">
             <div class="partner">
                 <div class="partner__info">
@@ -523,7 +523,7 @@
                             </p>
                         </div>
                     </div>
-                    <button class="button">Задать вопрос</button>
+                    <button class="button" data-question>Задать вопрос</button>
                 </div>
             </div>
         </div>
@@ -553,6 +553,28 @@
     </section>
 </main>
 <%= htmlWebpackPlugin.options.sectionFooter %>
+<div class="modal" data-modal>
+    <div class="modal__container">
+        <h2 class="modal__title">Задайте ваш вопрос</h2>
+        <form class="form form--modal">
+            <fieldset class="form__wrapper">
+                <label class="form__item">
+                    <input class="input" type="text" placeholder="Имя" name="USER_NAME" required>
+                </label>
+                <label class="form__item">
+                    <input class="input" type="tel" placeholder="Телефон" name="USER_PHONE" required>
+                </label>
+            </fieldset>
+            <label class="form__item form__item--area">
+                <textarea class="input" placeholder="Ваше сообщение" name="USER_MESSAGE" required></textarea>
+            </label>
+            <button class="button">Задать вопрос</button>
+        </form>
+        <svg class="modal__close" data-close>
+            <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+        </svg>
+    </div>
+</div>
 <%= htmlWebpackPlugin.options.temp %>
 </body>
 

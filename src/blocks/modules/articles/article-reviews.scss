@@ -21,6 +21,7 @@
     width: 100%;
 
     @include r(1200) {
+      margin-bottom: 18px;
       align-items: flex-start;
       flex-direction: column-reverse;
     }

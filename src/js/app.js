@@ -31,7 +31,7 @@ class App {
       };
 
       const changeStateOfSlider = (width) => {
-        if (width <= 572) {
+        if (width >= 1200) {
           if (typeof slider !== "undefined") {
             slider.destroy(true, true);
             slider = undefined;
@@ -41,7 +41,7 @@ class App {
         }
       };
 
-      if (item.hasAttribute("data-mobile")) {
+      if (item.hasAttribute("data-desktop")) {
         changeStateOfSlider(window.innerWidth);
         window.addEventListener("resize", () => {
           changeStateOfSlider(window.innerWidth);

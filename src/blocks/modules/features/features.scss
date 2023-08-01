@@ -27,11 +27,15 @@
     }
 
     &--mobile {
+      display: none;
       @include r(1200) {
+        position: relative;
+        display: block;
         padding: 0;
         background-color: #191919;
         overflow: hidden;
         height: 200px;
+        z-index: 1;
         .features__picture {
           display: flex;
           width: 100%;

@@ -7,6 +7,15 @@
     gap: 17px;
   }
 
+  &--modal {
+    align-items: flex-start;
+    width: 100%;
+
+    .form__wrapper {
+      width: 100%;
+    }
+  }
+
   &--footer {
     flex-direction: row;
     align-items: center;
@@ -34,10 +43,25 @@
     @include r(1200) {
       width: 100%;
     }
+
     &:last-child {
       width: 370px;
       @include r(1200) {
         width: 100%;
+      }
+    }
+
+    &--area {
+      width: 100%;
+      height: 260px;
+
+      textarea {
+        display: flex;
+        padding: 20px;
+        height: 100%;
+        border-radius: 10px;
+        border: 2px solid #000;
+        background: #EFEFEF;
       }
     }
   }

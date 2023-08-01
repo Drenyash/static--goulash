@@ -11,6 +11,14 @@
     }
 }
 
+.plm {
+    &-43 {
+        @include r(1200) {
+            padding-left: 43px;
+        }
+    }
+}
+
 .ptm {
     &-1 {
         @include r(1200) {
@@ -155,6 +163,11 @@
 }
 
 .pbm {
+    &-0 {
+        @include r(1200) {
+            padding-bottom: rem(0);
+        }
+    }
     &-1 {
         @include r(1200) {
             padding-bottom: rem(1);

@@ -140,6 +140,12 @@ button {
       right: 0;
       width: 100%;
     }
+
+    &--partners {
+      @include r(1200) {
+        top: 85%;
+      }
+    }
   }
 
   &--top {

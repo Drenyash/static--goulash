@@ -8,6 +8,22 @@
     display: flex;
   }
 
+  &.active {
+    .burger__item {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    &::before {
+      top: 5px;
+      transform: rotate(45deg);
+    }
+    &::after {
+      top: 5px;
+      width: 16px;
+      transform: rotate(-45deg);
+    }
+  }
+
   &::before,
   &::after {
     content: '';
@@ -16,6 +32,7 @@
     width: 16px;
     height: 2px;
     background-color: #000;
+    transition: .2s linear;
   }
 
   &::before {
@@ -37,5 +54,6 @@
     width: 16px;
     height: 2px;
     background-color: #000;
+    transition: .2s linear;
   }
 }

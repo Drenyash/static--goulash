@@ -38,36 +38,58 @@
 
 .swiper {
   height: min-content;
+
   &--full {
     position: relative;
     overflow: visible !important;
     @include r(1200) {
       overflow: hidden !important;
     }
+
     .swiper-wrapper {
       max-width: 1170px;
     }
+
     .swiper-slide {
       opacity: 0;
       visibility: hidden;
       transition: .2s linear;
     }
+
     .slider__item--visible {
       opacity: 1;
       visibility: visible;
     }
+
     .swiper-slide-next {
       opacity: 1;
       visibility: visible;
     }
+
     .swiper-slide-prev {
       opacity: 0;
       visibility: hidden;
     }
   }
+
   &--auto {
     .swiper-slide {
-      max-width: 272px;
+      @include r(1200) {
+        max-width: 272px;
+      }
+    }
+  }
+}
+
+.swiper--grid {
+  @include rmin(1201) {
+    margin: 0;
+    width: 100%;
+
+    .swiper-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(300px, 1fr));
+      gap: 30px;
     }
   }
 }
@@ -83,6 +105,7 @@
 
 .swiper-slide {
   max-width: 100%;
+
   &--auto {
     height: auto !important;
   }
@@ -94,9 +117,10 @@
 }
 
 .swiper-slide.swiper-slide--mob-hidden {
-    @include r(1200) {
-      display: none !important;
-    }
+  grid-column: span 2;
+  @include r(1200) {
+    display: none !important;
+  }
 }
 
 .swiper-toolbar {

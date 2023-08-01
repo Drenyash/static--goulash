@@ -3,12 +3,23 @@
   gap: 30px;
   grid-template-columns: repeat(4, 1fr);
 
+  @include r(1200) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    @include r(1200) {
+      max-width: 270px;
+    }
   }
 
   &__picture {

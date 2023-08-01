@@ -6,6 +6,10 @@
   &__header {
     margin-bottom: 75px;
     text-align: center;
+
+    @include r(1200) {
+      margin-bottom: 22px;
+    }
   }
 
   &__description {

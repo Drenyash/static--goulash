@@ -23,16 +23,23 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 152%; /* 27.36px */
+
+    @include r(1200) {
+      font-size: 16px;
+    }
   }
 
   &__text {
+    @include r(1200) {
+      font-size: 14px;
+    }
     &--after {
       position: absolute;
       right: 12px;
       bottom: 34px;
 
       @include r(1200) {
-        left: 250px;
+        left: 258px;
       }
     }
   }

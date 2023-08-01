@@ -21,18 +21,38 @@
   &:nth-child(1) {
     top: 80px;
     left: 300px;
+
+    @include r(1200) {
+      top: 418px;
+      left: 253px;
+    }
   }
   &:nth-child(2) {
     left: 20px;
     bottom: 190px;
+
+    @include r(1200) {
+      left: 20px;
+      bottom: 80px;
+    }
   }
   &:nth-child(3) {
     right: 150px;
     bottom: 450px;
+
+    @include r(1200) {
+      right: 150px;
+      bottom: -400px;
+    }
   }
   &:nth-child(4) {
     right: 70px;
     bottom: 230px;
+
+    @include r(1200) {
+      right: 70px;
+      bottom: 170px;
+    }
   }
   &:nth-child(5) {
     left: 880px;
@@ -45,28 +65,42 @@
     &:nth-child(1) {
       top: 80px;
       left: 300px;
+      @include r(1200) {
+        top: 512px;
+      }
     }
     &:nth-child(2) {
       left: 20px;
       bottom: -118px;
+      @include r(1200) {
+        bottom: -36px;
+      }
     }
     &:nth-child(3) {
       right: 150px;
       bottom: 0;
+      @include r(1200) {
+        right: 371px;
+        bottom: 309px;
+      }
     }
     &:nth-child(4) {
       right: 70px;
       bottom: -300px;
+
+      @include r(1200) {
+        right: 70px;
+        bottom: 217px;
+      }
     }
     &:nth-child(5) {
       left: 880px;
       bottom: -163px;
-    }
-  }
-}
 
-.decor {
-  @include r(1200) {
-    display: none;
+      @include r(1200) {
+        left: 100px;
+        bottom: 300px;
+      }
+    }
   }
 }

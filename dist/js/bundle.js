@@ -809,7 +809,7 @@ class App {
       };
 
       const changeStateOfSlider = (width) => {
-        if (width <= 572) {
+        if (width >= 1200) {
           if (typeof slider !== "undefined") {
             slider.destroy(true, true);
             slider = undefined;
@@ -819,7 +819,7 @@ class App {
         }
       };
 
-      if (item.hasAttribute("data-mobile")) {
+      if (item.hasAttribute("data-desktop")) {
         changeStateOfSlider(window.innerWidth);
         window.addEventListener("resize", () => {
           changeStateOfSlider(window.innerWidth);
@@ -841,6 +841,58 @@ class App {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
+
+
+/***/ }),
+
+/***/ "./src/js/burger.js":
+/*!**************************!*\
+  !*** ./src/js/burger.js ***!
+  \**************************/
+/***/ (function() {
+
+const burger = document.querySelector('[data-burger]')
+const nav = document.querySelector('[data-header-nav]')
+burger.addEventListener('click', ()=> {
+    burger.classList.toggle('active')
+    nav.classList.toggle('active')
+})
+
+
+/***/ }),
+
+/***/ "./src/js/modal.js":
+/*!*************************!*\
+  !*** ./src/js/modal.js ***!
+  \*************************/
+/***/ (function() {
+
+const modal = document.querySelector('[data-modal]')
+
+if (modal) {
+    const openBtn = document.querySelector('[data-question]')
+    const container = modal.querySelector('.modal__container');
+    const close = document.querySelector('[data-close]');
+    openBtn.addEventListener('click', ()=> {
+        toggleModal()
+        console.log('123')
+    })
+
+    modal.addEventListener('click', ()=> {
+        toggleModal()
+    })
+
+    close.addEventListener('click', ()=> {
+        toggleModal()
+    })
+
+    container.addEventListener('click', evt => evt.stopPropagation())
+
+    const toggleModal = () => {
+        modal.classList.toggle('active')
+    }
+
+}
 
 
 /***/ }),
@@ -11680,8 +11732,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _observer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_observer__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _animate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./animate */ "./src/js/animate.js");
 /* harmony import */ var _animate__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_animate__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _css_main_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/main.scss */ "./src/css/main.scss");
-/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app */ "./src/js/app.js");
+/* harmony import */ var _burger__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./burger */ "./src/js/burger.js");
+/* harmony import */ var _burger__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_burger__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modal */ "./src/js/modal.js");
+/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modal__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _css_main_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../css/main.scss */ "./src/css/main.scss");
+/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app */ "./src/js/app.js");
 
 
 
@@ -11689,7 +11745,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const app = new _app__WEBPACK_IMPORTED_MODULE_5__["default"]();
+
+
+const app = new _app__WEBPACK_IMPORTED_MODULE_7__["default"]();
+
 
 
 }();
