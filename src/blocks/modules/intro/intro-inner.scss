@@ -22,6 +22,10 @@
       text-align: center;
     }
 
+    @include r(355) {
+      margin-bottom: 10px;
+    }
+
     &-accent {
       color: $primary;
     }
@@ -36,6 +40,9 @@
     @include r(1200) {
       font-size: 18px;
       text-align: center;
+    }
+    @include r(374) {
+      font-size: 16px;
     }
   }
 

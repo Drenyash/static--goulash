@@ -5,7 +5,7 @@ export default function (el) {
     const data = {
         modules: [Navigation, Pagination],
         spaceBetween: 10,
-        slidesPerView: 1,
+        slidesPerView: 'auto',
         slideVisibleClass: 'slider__item--visible',
         watchSlidesProgress: true,
         breakpoints: {

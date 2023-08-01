@@ -39,7 +39,8 @@
       bottom: 34px;
 
       @include r(1200) {
-        left: 258px;
+        right: 4px;
+        bottom: 52px;
       }
     }
   }
@@ -54,5 +55,10 @@
   &__graph {
     position: relative;
     margin-top: auto;
+  }
+
+  &__icon {
+    display: flex;
+    width: 100%;
   }
 }

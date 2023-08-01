@@ -7,12 +7,17 @@
     max-height: 756px;
   }
 
+  @include r(355) {
+    padding-top: 30px;
+  }
+
   &--partners {
     .intro-inner__title {
       font-size: 100px;
       font-weight: 800;
       line-height: 88.5%;
     }
+
     @include r(1200) {
       .intro-inner__info {
         align-items: flex-start;
@@ -32,16 +37,22 @@
         bottom: 0;
       }
     }
+    @include r(355) {
+      padding-top: 0;
+      .intro-inner__title {
+        font-size: 32px;
+      }
+    }
   }
 
   &--bg {
-    background-size: auto,cover, cover;
+    background-size: auto, cover, cover;
     background-repeat: no-repeat, no-repeat;
-    background-image: url("../assets/images/laptop.png"),url("../assets/images/intro-bg.png"), url('../assets/images/intro-bg.jpg');
+    background-image: url("../assets/images/laptop.png"), url("../assets/images/intro-bg.png"), url('../assets/images/intro-bg.jpg');
     background-position: 78% 0, center, center;
 
     @include r(1200) {
-      background-size: auto 555px, cover, cover;
+      background-size: auto 69%, cover, cover;
       background-position: 57% bottom, center, center;
     }
   }

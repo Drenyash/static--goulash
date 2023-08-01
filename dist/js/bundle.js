@@ -510,7 +510,7 @@ __webpack_require__.r(__webpack_exports__);
     const data = {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
         spaceBetween: 10,
-        slidesPerView: 1,
+        slidesPerView: 'auto',
         slideVisibleClass: 'slider__item--visible',
         watchSlidesProgress: true,
         breakpoints: {
