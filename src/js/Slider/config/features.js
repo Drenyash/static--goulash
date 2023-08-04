@@ -20,6 +20,11 @@ export default function (el) {
                 disabledClass: 'slider__button--disabled',
             };
         }
+        if (el.querySelector('[data-pagination]')) {
+            data.pagination = {
+                el: el.querySelector('[data-pagination]'),
+            }
+        }
     } catch (e) {
     }
 

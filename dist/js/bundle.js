@@ -513,6 +513,8 @@ __webpack_require__.r(__webpack_exports__);
         slidesPerView: 'auto',
         slideVisibleClass: 'slider__item--visible',
         watchSlidesProgress: true,
+        visibilityFullFit: true,
+        autoResize: false,
         breakpoints: {
             1200: {
                 spaceBetween: 30,
@@ -528,6 +530,11 @@ __webpack_require__.r(__webpack_exports__);
                 prevEl: el.querySelector('[data-button-prev]'),
                 disabledClass: 'slider__button--disabled',
             };
+        }
+        if (el.querySelector('[data-pagination]')) {
+            data.pagination = {
+                el: el.querySelector('[data-pagination]'),
+            }
         }
     } catch (e) {
     }
@@ -572,6 +579,11 @@ const mobile = window.matchMedia('(min-width: 0px) and (max-width: 1199px)');
                 prevEl: el.querySelector('[data-button-prev]'),
                 disabledClass: 'slider__button--disabled',
             };
+        }
+        if (el.querySelector('[data-pagination]')) {
+            data.pagination = {
+                el: el.querySelector('[data-pagination]'),
+            }
         }
     } catch (e) {
     }
@@ -681,6 +693,11 @@ __webpack_require__.r(__webpack_exports__);
                 disabledClass: 'slider__button--disabled',
             };
         }
+        if (el.querySelector('[data-pagination]')) {
+            data.pagination = {
+                el: el.querySelector('[data-pagination]'),
+            }
+        }
     } catch (e) {
     }
 
@@ -716,7 +733,7 @@ class Accardeone {
   }
 
   toggleAccardeon() {
-    this.el.addEventListener("click", () => this.el.classList.add("faq__item--active"));
+    this.el.addEventListener("click", () => this.el.classList.toggle("faq__item--active"));
   }
 
   closeAccardeon() {

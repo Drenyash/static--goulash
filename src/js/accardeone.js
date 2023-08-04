@@ -13,7 +13,7 @@ class Accardeone {
   }
 
   toggleAccardeon() {
-    this.el.addEventListener("click", () => this.el.classList.add("faq__item--active"));
+    this.el.addEventListener("click", () => this.el.classList.toggle("faq__item--active"));
   }
 
   closeAccardeon() {

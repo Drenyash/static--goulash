@@ -87,6 +87,11 @@
   border-radius: 50%;
   cursor: pointer;
   transition: opacity .2s linear;
+  pointer-events: all;
+
+  @include r(1200) {
+    right: -16px;
+  }
 
   &:hover {
     opacity: .7;
@@ -98,11 +103,15 @@
     right: initial;
     left: -70px;
     transform: rotate(-180deg);
+
+    @include r(1200) {
+      left: -16px;
+    }
   }
 }
 
 .slider__button--disabled {
-  background-color: $light;
+  background-color: #EEEEEE;
   pointer-events: none;
   &:hover {
     opacity: 1;

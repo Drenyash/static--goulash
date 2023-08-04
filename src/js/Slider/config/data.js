@@ -8,6 +8,8 @@ export default function (el) {
         slidesPerView: 'auto',
         slideVisibleClass: 'slider__item--visible',
         watchSlidesProgress: true,
+        visibilityFullFit: true,
+        autoResize: false,
         breakpoints: {
             1200: {
                 spaceBetween: 30,
@@ -23,6 +25,11 @@ export default function (el) {
                 prevEl: el.querySelector('[data-button-prev]'),
                 disabledClass: 'slider__button--disabled',
             };
+        }
+        if (el.querySelector('[data-pagination]')) {
+            data.pagination = {
+                el: el.querySelector('[data-pagination]'),
+            }
         }
     } catch (e) {
     }

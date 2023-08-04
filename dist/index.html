@@ -27,7 +27,7 @@
                 <a href="#features" class="nav__link">Преимущества</a>
                 <a href="#work" class="nav__link">Работа у нас</a>
                 <a href="#become" class="nav__link">Стать партнером</a>
-                <button class="button" type="submit">Хочу подключиться!</button>
+                <button class="button button--gradient--blue" type="submit">Хочу подключиться!</button>
             </nav>
             <div class="burger" data-burger>
                 <span class="burger__item"></span>
@@ -212,85 +212,113 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <svg class="background-clip background-clip--down">
-            <use xlink:href="./assets/sprite/sprite.svg#icon-bg"></use>
-        </svg>
-    </section>
-    <section class="section pt-55 ptm-50 pb-55 pbm-70" id="features">
-        <div class="container">
-            <h2 class="title mb-40">Преимущества</h2>
-            <div class="slider mbm-20" data-slider="features" data-desktop>
-                <div class="swiper swiper--grid swiper--auto" data-slide>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="features__item">
-                                <svg class="features__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-system"></use>
-                                </svg>
-                                <h3 class="features__title">Единая экосистема</h3>
-                                <p class="features__text">
-                                    Забудьте о настройке множества интеграций. В рамках одной сисемы: сайт, приложение, ERM, CRM,
-                                    маркетинговый блок, маршрутизация, набивка и т.д.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="features__item">
-                                <svg class="features__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-way"></use>
-                                </svg>
-                                <h3 class="features__title">Единственная<br> маршрутизация на рынке</h3>
-                                <p class="features__text">
-                                    Система умеет точно рассчитать время доставки.
-                                    Автоматическое распределение заказов согласно многим критериям.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="features__item">
-                                <svg class="features__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-handshake"></use>
-                                </svg>
-                                <h3 class="features__title">Партнерская модель</h3>
-                                <p class="features__text">
-                                    Мы заинтересованы в развитии вашего бизнеса.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide--mob-hidden">
-                            <div class="features__item features__item--color-black features__item--big">
-                                <picture class="features__picture">
-                                    <img src="./assets/images/laptop.png" alt="">
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="features__item">
-                                <svg class="features__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-graph"></use>
-                                </svg>
-                                <h3 class="features__title">Рост выручки</h3>
-                                <p class="features__text">
-                                    Подключайте модульное решение с бессрочным сроком лицензии и работайте только с нужным
-                                    функционалом. Все для работы с каждым заведением в сети: кассовый модуль, складской учет, отчеты
-                                    для управляющего.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="swiper-pagination" data-pagination></div>
+                    <div class="swiper-tooltip swiper-tooltip--mobile" data-nav>
+                        <button class="button-slider" data-button-next>
+                            <svg class="slider__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                        <button class="button-slider button-slider--prev" data-button-prev>
+                            <svg class="slider__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="features__item features__item--mobile desktop-hidden">
-                <picture class="features__picture">
-                    <img src="./assets/images/laptop.png" alt="">
-                </picture>
+        </div>
+        <svg class="background-clip background-clip--down mob-hidden">
+            <use xlink:href="./assets/sprite/sprite.svg#icon-bg"></use>
+        </svg>
+    </section>
+    <section class="section pt-55 ptm-100 pb-55 pbm-160" id="features">
+        <div class="container">
+            <h2 class="title mb-40">Преимущества</h2>
+            <div class="features">
+                <div class="slider" data-slider="features" data-desktop>
+                    <div class="swiper swiper--grid swiper--auto" data-slide>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="features__item">
+                                    <svg class="features__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-system"></use>
+                                    </svg>
+                                    <h3 class="features__title">Единая экосистема</h3>
+                                    <p class="features__text">
+                                        Забудьте о настройке множества интеграций. В рамках одной сисемы: сайт, приложение, ERM, CRM,
+                                        маркетинговый блок, маршрутизация, набивка и т.д.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="features__item">
+                                    <svg class="features__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-way"></use>
+                                    </svg>
+                                    <h3 class="features__title">Единственная<br> маршрутизация на рынке</h3>
+                                    <p class="features__text">
+                                        Система умеет точно рассчитать время доставки.
+                                        Автоматическое распределение заказов согласно многим критериям.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="features__item">
+                                    <svg class="features__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-handshake"></use>
+                                    </svg>
+                                    <h3 class="features__title">Партнерская модель</h3>
+                                    <p class="features__text">
+                                        Мы заинтересованы в развитии вашего бизнеса.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide--mob-hidden">
+                                <div class="features__item features__item--color-black features__item--big">
+                                    <picture class="features__picture">
+                                        <img src="./assets/images/laptop.png" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="features__item">
+                                    <svg class="features__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-graph"></use>
+                                    </svg>
+                                    <h3 class="features__title">Рост выручки</h3>
+                                    <p class="features__text">
+                                        Подключайте модульное решение с бессрочным сроком лицензии и работайте только с нужным
+                                        функционалом. Все для работы с каждым заведением в сети: кассовый модуль, складской учет, отчеты
+                                        для управляющего.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination" data-pagination></div>
+                        <div class="swiper-tooltip swiper-tooltip--mobile" data-nav>
+                            <button class="button-slider" data-button-next>
+                                <svg class="slider__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </button>
+                            <button class="button-slider button-slider--prev" data-button-prev>
+                                <svg class="slider__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="features__item features__item--mobile desktop-hidden">
+                    <picture class="features__picture">
+                        <img src="./assets/images/laptop.png" alt="">
+                    </picture>
+                </div>
             </div>
         </div>
     </section>
-    <section class="section section--dark section--invert section--animate pt-600 ptm-50 pb-20">
+    <section class="section section--dark section--invert section--animate pt-600 ptm-50 pb-60">
         <div class="container">
             <h2 class="title mb-50" id="reviews">Отзывы</h2>
             <div class="slider mb-30" data-slider="reviews">
@@ -387,6 +415,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination swiper-pagination--light" data-pagination></div>
                     <div class="swiper-tooltip" data-nav>
                         <button class="button-slider" data-button-next>
                             <svg class="slider__icon">

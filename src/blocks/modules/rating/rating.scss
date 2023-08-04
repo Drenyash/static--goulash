@@ -6,6 +6,11 @@
   max-width: 175px;
   z-index: 1;
 
+  @include r(1200) {
+    padding: 22px 11px;
+    max-width: 160px;
+  }
+
   &::before {
     position: absolute;
     top: 0;
@@ -25,6 +30,11 @@
     justify-content: center;
     column-gap: 8px;
     z-index: 1;
+
+    @include r(1200) {
+      align-items: center;
+      justify-content: flex-end;
+    }
   }
 
   &__icon {
@@ -47,5 +57,9 @@
     font-weight: 500;
     line-height: 140%; /* 67.2px */
     color: $light;
+
+    @include r(1200) {
+      font-size: 28px;
+    }
   }
 }
