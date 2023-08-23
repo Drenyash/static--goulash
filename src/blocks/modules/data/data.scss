@@ -12,6 +12,22 @@
     overflow: hidden;
     width: 100%;
 
+    &--invert {
+      .data__total {
+        text-align: right;
+      }
+      .data__icon {
+        transform: rotateX(180deg);
+      }
+      .data__text--after {
+        left: 0;
+        right: initial;
+      }
+      .data__text {
+        text-align: right;
+      }
+    }
+
     @include r(1200) {
       padding: 15px 30px 15px 15px;
     }
@@ -50,6 +66,10 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 120%; /* 28.8px */
+
+    &--color-green {
+      color: #02E88D;
+    }
   }
 
   &__graph {
